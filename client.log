@@ -1,0 +1,7 @@
+2024-03-11 01:23:15,671 - DEBUG - Using selector: KqueueSelector
+2024-03-11 01:23:15,672 - DEBUG - Request sent
+2024-03-11 01:23:15,673 - INFO - Got response congrates, non-silly sender
+2024-03-11 01:23:15,673 - DEBUG - Request sent
+2024-03-11 01:23:15,673 - INFO - Got response ? WHATSAT kiwi.cs.ucla.edu 10 5
+2024-03-11 01:23:15,673 - DEBUG - Request sent
+2024-03-11 01:23:15,673 - INFO - Got response ? FLUFFYDOG

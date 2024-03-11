@@ -1,0 +1,18 @@
+2024-03-11 01:23:13,835 - DEBUG - Using selector: KqueueSelector
+2024-03-11 01:23:15,672 - INFO - Client established connection.
+2024-03-11 01:23:15,673 - DEBUG - About to read
+2024-03-11 01:23:15,673 - DEBUG - Received request
+2024-03-11 01:23:15,673 - INFO - request is IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1621464827.959498503
+2024-03-11 01:23:15,673 - INFO - Processing IAMAT
+2024-03-11 01:23:15,673 - INFO - Format correct, sending response.
+2024-03-11 01:23:15,673 - INFO - Response sent
+2024-03-11 01:23:15,673 - DEBUG - About to read
+2024-03-11 01:23:15,673 - DEBUG - Received request
+2024-03-11 01:23:15,673 - INFO - request is WHATSAT kiwi.cs.ucla.edu 10 5
+2024-03-11 01:23:15,673 - DEBUG - About to read
+2024-03-11 01:23:15,673 - DEBUG - Received request
+2024-03-11 01:23:15,673 - INFO - request is FLUFFYDOG
+2024-03-11 01:23:15,673 - DEBUG - About to read
+2024-03-11 01:23:15,673 - DEBUG - Received request
+2024-03-11 01:23:15,673 - INFO - Request is None
+2024-03-11 01:23:15,673 - INFO - Closing the connection.
