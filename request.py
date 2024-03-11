@@ -11,7 +11,7 @@ ports = {'Bailey':10000,
 
 logging.basicConfig(filename="server.log", level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-async def send_request(n: int, r):
+async def gplaces_request(n: int, r):
     if not (isinstance(n, int) and isinstance(r, int)):
         logging.error(f"Parameters must be ints.")
     if n < 1 or n > 20 or r < 1 or r > 50:
@@ -35,7 +35,9 @@ async def send_request(n: int, r):
 
             wanted = json.loads(json_string)
             wanted["results"] = wanted["results"][:n]
-            logging.info(json.dumps(wanted, sort_keys=True, indent=4))
+            places = json.dumps(wanted)
+            #logging.info(json.dumps(wanted, sort_keys=True, indent=4))
+            return places
 
 
 async def handle_requests(reader, writer):
@@ -56,23 +58,23 @@ async def handle_requests(reader, writer):
             args = request.split()
             response = "? " + request + "\n"
             # empty message
-            if len(args) < 1:
+            if len(args) != 4:
                 writer.write(response.encode())
                 await writer.drain()
                 continue
             
             if(args[0] == "IAMAT"):
                 logging.info("Processing IAMAT")
-                if len(args) != 4:
-                    writer.write(response.encode())
-                    await writer.drain()
-                    continue
-                logging.info("Format correct, sending response.")
+                # add to hash table
+
                 response = "congrates, non-silly sender\n"
                 writer.write(response.encode())
                 await writer.drain()
                 logging.info("Response sent")
-            else:
+            elif args[0] == "WHATSAT":
+                logging.info("Processsing WHATSAT")
+
+                response = await gplaces_request(int(args[3]), int(args[2])) + "\n"
                 writer.write(response.encode())
                 await writer.drain()
                 continue

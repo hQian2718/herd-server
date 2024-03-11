@@ -12,21 +12,6 @@ async def send_request(reader, writer, str):
     response = await reader.readline()
     logging.info(f"Got response {response.decode().strip()}")
 
-requests = [
-    "IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1621464827.959498503\n",
-    "WHATSAT kiwi.cs.ucla.edu 10 5\n",
-    "FLUFFYDOG\n"
-]
-
-async def read_lines(reader):
-    while True:
-        response = await reader.readline()
-        response = response.decode()
-        if not response:
-            logging.info("Response is None")
-            break
-        logging.info("Got response " + response)
-
 async def main():
     reader, writer = await asyncio.open_connection("127.0.0.1", 10000)
     for request in requests:
@@ -35,7 +20,12 @@ async def main():
     
     writer.close()
     await writer.wait_closed()
-    # await read_lines(reader)
         
 
 asyncio.run(main())
+
+requests = [
+    "IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1621464827.959498503\n",
+    "WHATSAT kiwi.cs.ucla.edu 10 5\n",
+    "FLUFFYDOG\n"
+]
