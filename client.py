@@ -1,21 +1,30 @@
-import os
-from dotenv import load_dotenv, dotenv_values
-import asyncio, aiohttp, json, logging
-import sys
+import asyncio, logging, time
 
 logging.basicConfig(filename="client.log", level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 async def send_request(reader, writer, str):
     writer.write(str.encode())
     await writer.drain()
-    logging.debug("Request sent")
+    logging.debug(f"Request sent: {str.strip()}")
     response = await reader.readline()
-    logging.info(f"Got response {response.decode().strip()}")
+    logging.info(f"Got response {response.decode().strip()}\n")
+
 
 async def main():
     reader, writer = await asyncio.open_connection("127.0.0.1", 10000)
+    requests = [
+    f"IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 {time.time()}\n",
+    "WHATSAT kiwi.cs.ucla.edu 10 5\n",
+    f"IAMAT kiwi.cs.ucla.edu +39.068930-118.445127 {time.time()}\n",
+    f"IAMAT sprout.cs.ucla.edu +39.068930-118.445127 {time.time()}\n",
+    "WHATSAT tasha.cs.ucla.edu 50 20\n",
+    "WHATSAT kiwi.cs.ucla.edu 100 100\n",
+    f"IAMAT elminster.cs.ucla.edu +39.068930-118.445127 {time.time()}\n",
+    f"IAMAT tasha.cs.ucla.edu +39.068930-118.445127 {time.time()}\n",
+    "WHATSAT kiwi.cs.ucla.edu 10 5\n",
+    "FLUFFYDOG\n"
+    ]
     for request in requests:
-        print(request)
         await send_request(reader, writer, request)
     
     writer.close()
@@ -24,8 +33,3 @@ async def main():
 
 asyncio.run(main())
 
-requests = [
-    "IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1621464827.959498503\n",
-    "WHATSAT kiwi.cs.ucla.edu 10 5\n",
-    "FLUFFYDOG\n"
-]
