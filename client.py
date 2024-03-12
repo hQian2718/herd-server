@@ -6,7 +6,7 @@ async def send_request(reader, writer, str):
     writer.write(str.encode())
     await writer.drain()
     logging.debug(f"Request sent: {str.strip()}")
-    response = await reader.readline()
+    response = await reader.read(10000)
     logging.info(f"Got response {response.decode().strip()}\n")
 
 
@@ -25,8 +25,8 @@ async def main():
     ]
 
     requests2 = [
-        [f"IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 {time.time()}\n", 10000],
-        ["WHATSAT kiwi.cs.ucla.edu 10 5\n", 10002]
+        [f"IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 {time.time()}\n", 10001],
+        ["WHATSAT kiwi.cs.ucla.edu 10 2\n", 10002]
     ]
 
     for request in requests2:
@@ -38,3 +38,5 @@ async def main():
         
 asyncio.run(main())
 
+
+"AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs"

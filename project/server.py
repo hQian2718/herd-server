@@ -52,7 +52,8 @@ class HerdServer:
             # print(self.client_info)
             return True
         except ValueError:
-            return False  
+            return False
+        
     # send request to google places API.
     async def gplaces_request(self, client: str, n: int, r: int):
 
@@ -65,7 +66,6 @@ class HerdServer:
         async with aiohttp.ClientSession() as session:
             load_dotenv()
             key = os.getenv("GPLACE_KEY")
-            
             request = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
             request += "location=" + str(self.client_info[client][0]) + "%2c"
             request += str(self.client_info[client][1])
@@ -101,7 +101,7 @@ class HerdServer:
             return writer
         except Exception:
             return None
-    
+
     async def propagate_msg(self, req, signatures:str):
         logging.debug("Begins notifying friends.")
         writes = []
@@ -135,25 +135,20 @@ class HerdServer:
             return response
 
     async def handle_query(self, request):
-        _, name, r_km, n = request.split()
+        args = request.split()
         logging.info("Processsing WHATSAT")
-        if(not name in self.client_info):
+        if(not args[1] in self.client_info):
             logging.debug("Client not found in hash table")
             return "? " + request + "\n"
         else:        
-            api_response = await self.gplaces_request(name, int(n), int(r_km))
+            api_response = await self.gplaces_request(args[1], int(args[3]), int(args[2]))
             # api_response = response
                 # api request function returns null: error encountered
             if not api_response:
                 logging.debug("API parameters contain error")
                 return "? " + request + "\n"
 
-            coords = str(self.client_info[name][0]) + str(self.client_info[name][1])
-            if not coords.startswith("+") and not coords.startswith("-"):
-                coords = "+" + coords 
-            
-            header = f"AT {self.name} +1.00 {name} {coords} {self.client_info[name][2]}\n"
-            return header + api_response
+            return api_response
     
     async def handle_flood(self, request):
         args = request.split()
@@ -194,15 +189,12 @@ async def main():
     parser.add_argument('server_name', type=str,
                         help='required server name input')
     args = parser.parse_args()
-    try:
-        herd_member = await start_server(args.server_name)
-        async with herd_member.server:
-            await herd_member.server.serve_forever()
-            
-        logging.info("Server is shutting down.")
-        herd_member.server.close()
-    except Exception as e:
-        logging.error("Exception encountered, shutting down.")
+    herd_member = await start_server(args.server_name)
+    async with herd_member.server:
+        await herd_member.server.serve_forever()
+        
+    logging.error("Server is shutting down.")
+    herd_member.server.close()
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -1,169 +1,292 @@
-2024-03-11 22:19:10,288 - Campbell - DEBUG - Server online.
-2024-03-11 22:19:11,358 - Bailey - DEBUG - Server online.
-2024-03-11 22:19:13,843 - Bailey - INFO - Client established connection.
-2024-03-11 22:19:13,843 - Bailey - DEBUG - Received request
-2024-03-11 22:19:13,843 - Bailey - INFO - request is IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710220753.841602
-2024-03-11 22:19:13,843 - Bailey - INFO - Processing IAMAT
-2024-03-11 22:19:13,843 - Bailey - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710220753.841602
-2024-03-11 22:19:13,843 - Bailey - DEBUG - [34.06893, -118.445127]
-2024-03-11 22:19:13,843 - Bailey - DEBUG - Hash Table Updated.
-2024-03-11 22:19:13,843 - Bailey - DEBUG - Writing Response AT Bailey 0.0022368431091308594 kiwi.cs.ucla.edu +34.068930-118.445127 1710220753.841602
+2024-03-11 23:25:45,388 - Bailey - DEBUG - Server online.
+2024-03-11 23:25:47,329 - Bailey - INFO - Client established connection.
+2024-03-11 23:25:47,330 - Bailey - DEBUG - Received request
+2024-03-11 23:25:47,330 - Bailey - INFO - request is IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710224747.327276
+2024-03-11 23:25:47,330 - Bailey - INFO - Processing IAMAT
+2024-03-11 23:25:47,330 - Bailey - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710224747.327276
+2024-03-11 23:25:47,331 - Bailey - DEBUG - [34.06893, -118.445127]
+2024-03-11 23:25:47,332 - Bailey - DEBUG - Hash Table Updated.
+2024-03-11 23:25:47,332 - Bailey - DEBUG - Writing Response AT Bailey 0.005322933197021484 kiwi.cs.ucla.edu +34.068930-118.445127 1710224747.327276
 
-2024-03-11 22:19:13,843 - Bailey - DEBUG - Response sent
-2024-03-11 22:19:13,844 - Bailey - DEBUG - Begins notifying friends.
-2024-03-11 22:19:13,844 - Bailey - DEBUG - Adding send task to server Campbell
-2024-03-11 22:19:13,844 - Bailey - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710220753.841602 BaileyBailey
+2024-03-11 23:25:47,332 - Bailey - DEBUG - Response sent
+2024-03-11 23:25:47,332 - Bailey - DEBUG - Writer closed here.
+2024-03-11 23:25:47,333 - Bailey - DEBUG - Begins notifying friends.
+2024-03-11 23:25:47,333 - Bailey - DEBUG - Server friend Bona doesn't know!
+2024-03-11 23:25:47,334 - Bailey - DEBUG - Server friend Campbell doesn't know!
+2024-03-11 23:25:47,334 - Bailey - DEBUG - All friends notified
+2024-03-11 23:52:42,222 - Bailey - DEBUG - Server online.
+2024-03-11 23:52:45,344 - Campbell - DEBUG - Server online.
+2024-03-11 23:52:46,595 - Bailey - INFO - Client established connection.
+2024-03-11 23:52:46,597 - Campbell - INFO - Client established connection.
+2024-03-11 23:53:53,110 - Bailey - INFO - Client established connection.
+2024-03-11 23:53:53,111 - Campbell - INFO - Client established connection.
+2024-03-11 23:53:59,636 - Bailey - DEBUG - Server online.
+2024-03-11 23:54:01,217 - Campbell - DEBUG - Server online.
+2024-03-11 23:54:03,621 - Bailey - INFO - Client established connection.
+2024-03-11 23:54:03,623 - Campbell - INFO - Client established connection.
+2024-03-11 23:54:41,363 - Campbell - DEBUG - Server online.
+2024-03-11 23:54:42,264 - Bailey - DEBUG - Server online.
+2024-03-11 23:54:43,582 - Bailey - INFO - Client established connection.
+2024-03-11 23:54:43,584 - Campbell - INFO - Client established connection.
+2024-03-11 23:54:49,524 - Bailey - DEBUG - Server online.
+2024-03-12 00:01:27,149 - Bailey - DEBUG - Server online.
+2024-03-12 00:01:30,209 - Campbell - DEBUG - Server online.
+2024-03-12 00:01:31,676 - Bailey - INFO - Client established connection.
+2024-03-12 00:01:31,676 - Bailey - INFO - Processing IAMAT
+2024-03-12 00:01:31,677 - Bailey - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710226891.674804
+2024-03-12 00:01:31,677 - Bailey - DEBUG - [34.06893, -118.445127]
+2024-03-12 00:01:31,678 - Bailey - DEBUG - Hash Table Updated.
+2024-03-12 00:01:31,678 - Bailey - DEBUG - Begins notifying friends.
+2024-03-12 00:01:31,679 - Bailey - DEBUG - Server friend Bona doesn't know!
+2024-03-12 00:01:31,679 - Bailey - DEBUG - Server friend Campbell doesn't know!
+2024-03-12 00:01:31,679 - Bailey - DEBUG - Friend online, sending update to Campbell
+2024-03-12 00:01:31,679 - Bailey - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710226891.674804 Bailey
 
-2024-03-11 22:19:13,844 - Bailey - DEBUG - Response sent
-2024-03-11 22:19:13,845 - Bailey - DEBUG - All friends notified
-2024-03-11 22:19:13,844 - Campbell - INFO - Client established connection.
-2024-03-11 22:19:13,845 - Campbell - INFO - Client established connection.
-2024-03-11 22:19:13,845 - Campbell - DEBUG - Received request
-2024-03-11 22:19:13,845 - Campbell - INFO - request is WHATSAT kiwi.cs.ucla.edu 10 5
-2024-03-11 22:19:13,845 - Campbell - INFO - Processsing WHATSAT
-2024-03-11 22:19:13,845 - Campbell - DEBUG - Client not found in hash table
-2024-03-11 22:19:13,845 - Campbell - DEBUG - Writing Response ? WHATSAT kiwi.cs.ucla.edu 10 5
+2024-03-12 00:01:31,680 - Bailey - DEBUG - Response sent
+2024-03-12 00:01:31,680 - Campbell - INFO - Client established connection.
+2024-03-12 00:01:31,680 - Bailey - DEBUG - Writer closed here.
+2024-03-12 00:01:31,680 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710226891.674804
+2024-03-12 00:01:31,680 - Bailey - DEBUG - All friends notified
+2024-03-12 00:01:31,680 - Campbell - DEBUG - [34.06893, -118.445127]
+2024-03-12 00:01:31,680 - Campbell - DEBUG - Begins notifying friends.
+2024-03-12 00:01:31,680 - Campbell - DEBUG - Server friend Bona doesn't know!
+2024-03-12 00:01:31,681 - Campbell - DEBUG - Server friend Jaquez doesn't know!
+2024-03-12 00:01:31,681 - Campbell - DEBUG - All friends notified
+2024-03-12 00:01:31,681 - Campbell - INFO - Client established connection.
+2024-03-12 00:01:31,681 - Campbell - INFO - Processsing WHATSAT
+2024-03-12 00:01:31,681 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
+2024-03-12 00:01:32,164 - Campbell - INFO - Google Places API returns 200
+2024-03-12 00:02:36,655 - Campbell - DEBUG - Server online.
+2024-03-12 00:02:37,902 - Bailey - DEBUG - Server online.
+2024-03-12 00:02:39,414 - Bailey - INFO - Client established connection.
+2024-03-12 00:02:39,414 - Bailey - INFO - Processing IAMAT
+2024-03-12 00:02:39,414 - Bailey - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710226959.412517
+2024-03-12 00:02:39,415 - Bailey - DEBUG - [34.06893, -118.445127]
+2024-03-12 00:02:39,416 - Bailey - DEBUG - Hash Table Updated.
+2024-03-12 00:02:39,416 - Bailey - DEBUG - Begins notifying friends.
+2024-03-12 00:02:39,416 - Bailey - DEBUG - Server friend Bona doesn't know!
+2024-03-12 00:02:39,417 - Bailey - DEBUG - Server friend Campbell doesn't know!
+2024-03-12 00:02:39,417 - Bailey - DEBUG - Friend online, sending update to Campbell
+2024-03-12 00:02:39,417 - Bailey - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710226959.412517 Bailey
 
-2024-03-11 22:19:13,845 - Campbell - DEBUG - Response sent
-2024-03-11 22:19:13,845 - Campbell - DEBUG - Received request
-2024-03-11 22:19:13,845 - Campbell - INFO - request is UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710220753.841602 BaileyBailey
-2024-03-11 22:19:13,845 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710220753.841602
-2024-03-11 22:19:13,845 - Campbell - DEBUG - [34.06893, -118.445127]
-2024-03-11 22:19:13,845 - Campbell - DEBUG - Begins notifying friends.
-2024-03-11 22:19:13,846 - Bailey - INFO - Client established connection.
-2024-03-11 22:19:13,846 - Campbell - DEBUG - All friends notified
-2024-03-11 22:19:13,846 - Bailey - DEBUG - Received request
-2024-03-11 22:19:13,846 - Bailey - INFO - Request is None
-2024-03-11 22:19:17,249 - Bailey - INFO - Client established connection.
-2024-03-11 22:19:17,249 - Bailey - DEBUG - Received request
-2024-03-11 22:19:17,249 - Bailey - INFO - request is IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710220757.2483242
-2024-03-11 22:19:17,249 - Bailey - INFO - Processing IAMAT
-2024-03-11 22:19:17,249 - Bailey - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710220757.2483242
-2024-03-11 22:19:17,249 - Bailey - DEBUG - [34.06893, -118.445127]
-2024-03-11 22:19:17,249 - Bailey - DEBUG - Hash Table Updated.
-2024-03-11 22:19:17,249 - Bailey - DEBUG - Writing Response AT Bailey 0.0014247894287109375 kiwi.cs.ucla.edu +34.068930-118.445127 1710220757.2483242
+2024-03-12 00:02:39,417 - Bailey - DEBUG - Response sent
+2024-03-12 00:02:39,417 - Bailey - DEBUG - Writer closed here.
+2024-03-12 00:02:39,417 - Bailey - DEBUG - All friends notified
+2024-03-12 00:02:39,417 - Campbell - INFO - Client established connection.
+2024-03-12 00:02:39,417 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710226959.412517
+2024-03-12 00:02:39,418 - Campbell - DEBUG - [34.06893, -118.445127]
+2024-03-12 00:02:39,418 - Campbell - DEBUG - Begins notifying friends.
+2024-03-12 00:02:39,418 - Campbell - DEBUG - Server friend Bona doesn't know!
+2024-03-12 00:02:39,418 - Campbell - INFO - Client established connection.
+2024-03-12 00:02:39,419 - Campbell - DEBUG - Server friend Jaquez doesn't know!
+2024-03-12 00:02:39,419 - Campbell - DEBUG - All friends notified
+2024-03-12 00:02:39,419 - Campbell - INFO - Processsing WHATSAT
+2024-03-12 00:02:39,420 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
+2024-03-12 00:02:39,800 - Campbell - INFO - Google Places API returns 200
+2024-03-12 00:08:47,892 - Campbell - INFO - Client established connection.
+2024-03-12 00:08:47,894 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710227327.886015
+2024-03-12 00:08:47,895 - Campbell - DEBUG - [34.06893, -118.445127]
+2024-03-12 00:08:47,895 - Campbell - DEBUG - Begins notifying friends.
+2024-03-12 00:08:47,896 - Campbell - INFO - Client established connection.
+2024-03-12 00:08:47,897 - Campbell - INFO - Client established connection.
+2024-03-12 00:08:47,897 - Campbell - INFO - Processsing WHATSAT
+2024-03-12 00:08:47,899 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
+2024-03-12 00:08:47,901 - Campbell - DEBUG - Server friend Bona doesn't know!
+2024-03-12 00:08:47,901 - Campbell - DEBUG - Friend online, sending update to Bona
+2024-03-12 00:08:47,902 - Campbell - DEBUG - Server friend Jaquez doesn't know!
+2024-03-12 00:08:47,902 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710227327.886015 BaileyCampbell
 
-2024-03-11 22:19:17,249 - Bailey - DEBUG - Response sent
-2024-03-11 22:19:17,249 - Bailey - DEBUG - Begins notifying friends.
-2024-03-11 22:19:17,250 - Campbell - INFO - Client established connection.
-2024-03-11 22:19:17,250 - Bailey - DEBUG - Adding send task to server Campbell
-2024-03-11 22:19:17,250 - Campbell - DEBUG - Received request
-2024-03-11 22:19:17,250 - Campbell - INFO - request is WHATSAT kiwi.cs.ucla.edu 10 5
-2024-03-11 22:19:17,250 - Bailey - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710220757.2483242 BaileyBailey
+2024-03-12 00:08:47,902 - Campbell - DEBUG - Response sent
+2024-03-12 00:08:47,903 - Campbell - DEBUG - Writer closed here.
+2024-03-12 00:08:47,903 - Campbell - DEBUG - All friends notified
+2024-03-12 00:08:48,368 - Campbell - INFO - Google Places API returns 200
+2024-03-12 10:49:39,798 - Bona - DEBUG - Server online.
+2024-03-12 10:49:51,959 - Campbell - DEBUG - Server online.
+2024-03-12 10:50:22,729 - Bona - INFO - Client established connection.
+2024-03-12 10:50:22,729 - Bona - INFO - Processing IAMAT
+2024-03-12 10:50:22,729 - Bona - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265822.727384
+2024-03-12 10:50:22,730 - Bona - DEBUG - [34.06893, -118.445127]
+2024-03-12 10:50:22,730 - Bona - DEBUG - Hash Table Updated.
+2024-03-12 10:50:22,730 - Bona - DEBUG - Begins notifying friends.
+2024-03-12 10:50:22,730 - Bona - DEBUG - Server friend Clark doesn't know!
+2024-03-12 10:50:22,731 - Bona - DEBUG - Server friend Campbell doesn't know!
+2024-03-12 10:50:22,731 - Bona - DEBUG - Friend online, sending update to Campbell
+2024-03-12 10:50:22,731 - Bona - DEBUG - Server friend Bailey doesn't know!
+2024-03-12 10:50:22,731 - Bona - DEBUG - Friend online, sending update to Bailey
+2024-03-12 10:50:22,731 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265822.727384 Bona
 
-2024-03-11 22:19:17,250 - Campbell - INFO - Processsing WHATSAT
-2024-03-11 22:19:17,250 - Bailey - DEBUG - Response sent
-2024-03-11 22:19:17,251 - Bailey - DEBUG - All friends notified
-2024-03-11 22:19:17,252 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyCVyseM_rDXtm2-whdDnTMM26nXZE_YtUs
-2024-03-11 22:19:17,266 - Campbell - INFO - Client established connection.
-2024-03-11 22:19:17,269 - Campbell - DEBUG - Received request
-2024-03-11 22:19:17,269 - Campbell - INFO - request is UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710220757.2483242 BaileyBailey
-2024-03-11 22:19:17,269 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710220757.2483242
-2024-03-11 22:19:17,269 - Campbell - DEBUG - [34.06893, -118.445127]
-2024-03-11 22:19:17,269 - Campbell - DEBUG - Begins notifying friends.
-2024-03-11 22:19:17,270 - Bailey - INFO - Client established connection.
-2024-03-11 22:19:17,271 - Campbell - DEBUG - All friends notified
-2024-03-11 22:19:17,271 - Bailey - DEBUG - Received request
-2024-03-11 22:19:17,271 - Bailey - INFO - Request is None
-2024-03-11 22:19:18,064 - Campbell - INFO - Google Places API returns 200
-2024-03-11 22:19:18,089 - Campbell - DEBUG - Writing Response {"html_attributions": [], "next_page_token": "ATplDJa15wZTvuAyEINW6ioFtNPagHNKajBp5wKdSV6Sibd_Mtxm1dn6pZWeiMvxkpYNUcI7hGkWhRX3n-KjZhKsFMSJn4CrK5WzKyu2FdIUNNdkLD6mJ2SKCn1zpU6xps-QkApVlvhLuYa3Yej4nZNaDaGFdU4Wi5yYMha4GFtUVwYNR-JXauoSck2-v38NUUQjz6j8B_VcxOuqSi-a11_w6AkN0xkHAYT8h5Fq2vj7Y-L_rbWYBLnOPkEJVlKQfutSNWaV7xnHSCWLVghx7W0koD4PIAtqNi6PrJY_GIhGjjAE9mf_a90NXo9RE1t6c6TpfTd-U0Nu_qk1NXS0eA5yBRJb4CW6xeNX0qSSzlDGuQTUZFPMLrunTNzB8GMtDy1_IBuoVnTzPCL4GDGJnfwIHofvD16s6fN2dUISlNXi8XIy", "results": [{"geometry": {"location": {"lat": 34.0549076, "lng": -118.242643}, "viewport": {"northeast": {"lat": 34.33730608759191, "lng": -118.155289077463}, "southwest": {"lat": 33.70365193147634, "lng": -118.6681759484859}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png", "icon_background_color": "#7B9EB0", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet", "name": "Los Angeles", "photos": [{"height": 533, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/113235678621954790854\">Dhananjay Baghel</a>"], "photo_reference": "ATplDJbi2LElJ81syVrqHGGlcsDJakzLdsKlCSLuYeM3HGeKfYP08vUE8t2Y81cjuD1VGZqabgHCWJK-xjFr_bEtZHhIab1C3bVvR8HG1jKvOiMDx8B25Xuzi-tN8vql50ag9XbyXEhwKKuir8Re790ehlFZR6Jv8ezCZzvE4jgeSooOlC-Z", "width": 800}], "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I", "reference": "ChIJE9on3F3HwoAR9AhGJW_fL-I", "scope": "GOOGLE", "types": ["locality", "political"], "vicinity": "Los Angeles"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 34.0632746, "lng": -118.4409504}, "viewport": {"northeast": {"lat": 34.0646108802915, "lng": -118.4398087197085}, "southwest": {"lat": 34.0619129197085, "lng": -118.4425066802915}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png", "icon_background_color": "#909CE1", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet", "name": "W Los Angeles - West Beverly Hills", "photos": [{"height": 320, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/112226443518685790919\">W Los Angeles - West Beverly Hills</a>"], "photo_reference": "ATplDJZ7cmfNHDXeErquNXuIALsnZlmmJyUKY9DLjEcMCXpadu_kwhGAsb3zHYWtXwS8SXswilWGRmUFv8JiSt0UXwhJ6aGGzAHYuDTHmI72zmjww85XK8B97WQEiTuBaGabU8ryRX_2JlR7JZmM70QD4cLbYGUVO2JAx4omznB7Top6crXb", "width": 480}], "place_id": "ChIJffYelYC8woARkChY4cQOzUM", "plus_code": {"compound_code": "3H75+8J Los Angeles, CA, USA", "global_code": "85633H75+8J"}, "rating": 4.2, "reference": "ChIJffYelYC8woARkChY4cQOzUM", "scope": "GOOGLE", "types": ["lodging", "point_of_interest", "establishment"], "user_ratings_total": 1336, "vicinity": "930 Hilgard Avenue, Los Angeles"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 34.0606386, "lng": -118.4429771}, "viewport": {"northeast": {"lat": 34.0620311302915, "lng": -118.4417359197085}, "southwest": {"lat": 34.0593331697085, "lng": -118.4444338802915}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png", "icon_background_color": "#909CE1", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet", "name": "Royal Palace Westwood Hotel", "opening_hours": {"open_now": true}, "photos": [{"height": 1836, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/107513054366925301603\">Jose Solorio Gonzalez</a>"], "photo_reference": "ATplDJZQeiITaHX29SGE-Oz1yK0Wh4GLysw2A5JVkuw_pFaLEJzArrstDxEdd2ahRV5PwI1ZtulrvbDD4BuN5MwO_TdZPu4MpbEPZRrfqdKvsVJVplzKie9C6GZxdmfK7YZdix-fOtKeiiwVqtDwHFxlgk7Ya-__4_WY_MIA4qG1MZ2gEq6i", "width": 3264}], "place_id": "ChIJ36i1toG8woARHcjs6P2eCkU", "plus_code": {"compound_code": "3H64+7R Los Angeles, CA, USA", "global_code": "85633H64+7R"}, "rating": 4.3, "reference": "ChIJ36i1toG8woARHcjs6P2eCkU", "scope": "GOOGLE", "types": ["lodging", "point_of_interest", "establishment"], "user_ratings_total": 323, "vicinity": "1052 Tiverton Avenue, Los Angeles"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 34.0677284, "lng": -118.4260329}, "viewport": {"northeast": {"lat": 34.06895858029149, "lng": -118.4244877697085}, "southwest": {"lat": 34.0662606197085, "lng": -118.4271857302915}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png", "icon_background_color": "#909CE1", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet", "name": "Beverly Hills Plaza Hotel & Spa", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/117181617125728136112\">Yana Berkovich</a>"], "photo_reference": "ATplDJbvVkwtAbY0Ft7UPcil7Mj_YNVYaOZC1OEMgUczA5GiiB2ZKcUp_04EB5SLEDRzXah3MUOOkbRfSRQpbrmJrlHTayILNpjAGvmnXfD7Rf8Cc4Ac1pnRH-FmVsAOlONz-3TGtL29LBeve6v5LKvvC150hh9d73iQ_mKRg4wvdlc-rYVE", "width": 4032}], "place_id": "ChIJ5ZA1I3e8woARBzIurF6K3vU", "plus_code": {"compound_code": "3H9F+3H Los Angeles, CA, USA", "global_code": "85633H9F+3H"}, "rating": 4.3, "reference": "ChIJ5ZA1I3e8woARBzIurF6K3vU", "scope": "GOOGLE", "types": ["lodging", "point_of_interest", "establishment"], "user_ratings_total": 496, "vicinity": "10300 Wilshire Boulevard, Los Angeles"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 34.0699182, "lng": -118.4438495}, "viewport": {"northeast": {"lat": 34.08369004999999, "lng": -118.42986535}, "southwest": {"lat": 34.05716345, "lng": -118.46288875}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png", "icon_background_color": "#7B9EB0", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/school_pinlet", "name": "University of California, Los Angeles", "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/116588423382001905921\">guy electric</a>"], "photo_reference": "ATplDJbdUXm3HUj8p1idk8daeDucL4DQ5jRi5F2ACrM7e4zFEhz9y6SegiM3fr8Mq6AbDnaMswGrsabccLrrdHtsdp-hJXnvBmczYcXXEN8n4jiv_4pltzUrXKujVM686tVuvgaIywd9fKKLT-6tztnMdCcqMvmGVWd4IBFaSTwFfXEEubnw", "width": 4032}], "place_id": "ChIJZQ9c8IW8woARN0gTXFiTqSU", "plus_code": {"compound_code": "3H94+XF Los Angeles, CA, USA", "global_code": "85633H94+XF"}, "rating": 4.6, "reference": "ChIJZQ9c8IW8woARN0gTXFiTqSU", "scope": "GOOGLE", "types": ["university", "point_of_interest", "establishment"], "user_ratings_total": 2400, "vicinity": "Los Angeles"}], "status": "OK"}
+2024-03-12 10:50:22,731 - Bona - DEBUG - Response sent
+2024-03-12 10:50:22,731 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265822.727384 Bona
 
-2024-03-11 22:19:18,090 - Campbell - DEBUG - Response sent
-2024-03-11 22:22:49,961 - Bailey - ERROR - Keyboard Interrupt Detected, Bailey shutting down
-Traceback (most recent call last):
-  File "/Users/mrpentagon/MEGA/CS/131-LANG/herd-server/server.py", line 190, in main
-  File "/Users/mrpentagon/anaconda3/lib/python3.11/asyncio/base_events.py", line 369, in serve_forever
-    await self._serving_forever_fut
-asyncio.exceptions.CancelledError
-2024-03-11 22:22:51,058 - Campbell - ERROR - Keyboard Interrupt Detected, Campbell shutting down
-Traceback (most recent call last):
-  File "/Users/mrpentagon/MEGA/CS/131-LANG/herd-server/server.py", line 190, in main
-  File "/Users/mrpentagon/anaconda3/lib/python3.11/asyncio/base_events.py", line 369, in serve_forever
-    await self._serving_forever_fut
-asyncio.exceptions.CancelledError
-2024-03-11 22:22:53,667 - Campbell - DEBUG - Server online.
-2024-03-11 22:22:54,631 - Bailey - DEBUG - Server online.
-2024-03-11 22:22:59,366 - Bailey - INFO - Client established connection.
-2024-03-11 22:22:59,366 - Bailey - DEBUG - Received request
-2024-03-11 22:22:59,366 - Bailey - INFO - request is IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710220979.365128
-2024-03-11 22:22:59,366 - Bailey - INFO - Processing IAMAT
-2024-03-11 22:22:59,366 - Bailey - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710220979.365128
-2024-03-11 22:22:59,367 - Bailey - DEBUG - [34.06893, -118.445127]
-2024-03-11 22:22:59,367 - Bailey - DEBUG - Hash Table Updated.
-2024-03-11 22:22:59,367 - Bailey - DEBUG - Writing Response AT Bailey 0.0021369457244873047 kiwi.cs.ucla.edu +34.068930-118.445127 1710220979.365128
+2024-03-12 10:50:22,731 - Bona - DEBUG - Response sent
+2024-03-12 10:50:22,731 - Bona - DEBUG - Writer closed here.
+2024-03-12 10:50:22,731 - Campbell - INFO - Client established connection.
+2024-03-12 10:50:22,731 - Bona - DEBUG - Writer closed here.
+2024-03-12 10:50:22,731 - Bona - DEBUG - All friends notified
+2024-03-12 10:50:22,731 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265822.727384
+2024-03-12 10:50:22,732 - Campbell - DEBUG - [34.06893, -118.445127]
+2024-03-12 10:50:22,732 - Campbell - DEBUG - Begins notifying friends.
+2024-03-12 10:50:22,732 - Campbell - DEBUG - Server friend Bailey doesn't know!
+2024-03-12 10:50:22,732 - Campbell - DEBUG - Friend online, sending update to Bailey
+2024-03-12 10:50:22,733 - Campbell - INFO - Client established connection.
+2024-03-12 10:50:22,733 - Campbell - DEBUG - Server friend Jaquez doesn't know!
+2024-03-12 10:50:22,733 - Campbell - INFO - Processsing WHATSAT
+2024-03-12 10:50:22,733 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
+2024-03-12 10:50:22,743 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265822.727384 BonaCampbell
 
-2024-03-11 22:22:59,367 - Bailey - DEBUG - Response sent
-2024-03-11 22:22:59,367 - Bailey - DEBUG - Writer closed here.
-2024-03-11 22:22:59,367 - Bailey - DEBUG - Begins notifying friends.
-2024-03-11 22:22:59,368 - Bailey - DEBUG - Server friend Bona doesn't know!
-2024-03-11 22:22:59,368 - Bailey - DEBUG - Server friend Campbell doesn't know!
-2024-03-11 22:22:59,368 - Bailey - DEBUG - Friend online, sending update to Campbell
-2024-03-11 22:22:59,368 - Bailey - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710220979.365128 Bailey
+2024-03-12 10:50:22,743 - Campbell - DEBUG - Response sent
+2024-03-12 10:50:22,743 - Campbell - DEBUG - Writer closed here.
+2024-03-12 10:50:22,744 - Campbell - INFO - Client established connection.
+2024-03-12 10:50:22,744 - Campbell - DEBUG - All friends notified
+2024-03-12 10:50:22,953 - Campbell - INFO - Google Places API returns 200
+2024-03-12 10:50:37,430 - Bona - INFO - Client established connection.
+2024-03-12 10:50:37,431 - Bona - INFO - Processing IAMAT
+2024-03-12 10:50:37,431 - Bona - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265837.429607
+2024-03-12 10:50:37,431 - Bona - DEBUG - [34.06893, -118.445127]
+2024-03-12 10:50:37,431 - Bona - DEBUG - Hash Table Updated.
+2024-03-12 10:50:37,431 - Bona - DEBUG - Begins notifying friends.
+2024-03-12 10:50:37,431 - Bona - DEBUG - Server friend Clark doesn't know!
+2024-03-12 10:50:37,431 - Bona - DEBUG - Server friend Campbell doesn't know!
+2024-03-12 10:50:37,431 - Bona - DEBUG - Friend online, sending update to Campbell
+2024-03-12 10:50:37,432 - Campbell - INFO - Client established connection.
+2024-03-12 10:50:37,432 - Bona - DEBUG - Server friend Bailey doesn't know!
+2024-03-12 10:50:37,432 - Bona - DEBUG - Friend online, sending update to Bailey
+2024-03-12 10:50:37,432 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265837.429607 Bona
 
-2024-03-11 22:22:59,368 - Bailey - DEBUG - Response sent
-2024-03-11 22:22:59,368 - Campbell - INFO - Client established connection.
-2024-03-11 22:22:59,368 - Bailey - DEBUG - Writer closed here.
-2024-03-11 22:22:59,368 - Bailey - DEBUG - All friends notified
-2024-03-11 22:22:59,368 - Campbell - DEBUG - Received request
-2024-03-11 22:22:59,368 - Campbell - INFO - request is WHATSAT kiwi.cs.ucla.edu 10 5
-2024-03-11 22:22:59,368 - Campbell - INFO - Processsing WHATSAT
-2024-03-11 22:22:59,368 - Campbell - DEBUG - Client not found in hash table
-2024-03-11 22:22:59,368 - Campbell - DEBUG - Writing Response ? WHATSAT kiwi.cs.ucla.edu 10 5
+2024-03-12 10:50:37,432 - Bona - DEBUG - Response sent
+2024-03-12 10:50:37,432 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265837.429607 Bona
 
-2024-03-11 22:22:59,368 - Campbell - DEBUG - Response sent
-2024-03-11 22:22:59,369 - Campbell - INFO - Client established connection.
-2024-03-11 22:22:59,369 - Campbell - DEBUG - Writer closed here.
-2024-03-11 22:22:59,369 - Campbell - DEBUG - Received request
-2024-03-11 22:22:59,369 - Campbell - INFO - request is UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710220979.365128 Bailey
-2024-03-11 22:22:59,369 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710220979.365128
-2024-03-11 22:22:59,369 - Campbell - DEBUG - [34.06893, -118.445127]
-2024-03-11 22:22:59,369 - Campbell - DEBUG - Begins notifying friends.
-2024-03-11 22:22:59,369 - Campbell - DEBUG - Server friend Bona doesn't know!
-2024-03-11 22:22:59,369 - Campbell - DEBUG - Server friend Jaquez doesn't know!
-2024-03-11 22:22:59,369 - Campbell - DEBUG - All friends notified
-2024-03-11 22:23:01,343 - Bailey - INFO - Client established connection.
-2024-03-11 22:23:01,343 - Bailey - DEBUG - Received request
-2024-03-11 22:23:01,343 - Bailey - INFO - request is IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710220981.342274
-2024-03-11 22:23:01,343 - Bailey - INFO - Processing IAMAT
-2024-03-11 22:23:01,343 - Bailey - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710220981.342274
-2024-03-11 22:23:01,343 - Bailey - DEBUG - [34.06893, -118.445127]
-2024-03-11 22:23:01,343 - Bailey - DEBUG - Hash Table Updated.
-2024-03-11 22:23:01,343 - Bailey - DEBUG - Writing Response AT Bailey 0.0014719963073730469 kiwi.cs.ucla.edu +34.068930-118.445127 1710220981.342274
+2024-03-12 10:50:37,432 - Bona - DEBUG - Response sent
+2024-03-12 10:50:37,432 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265837.429607
+2024-03-12 10:50:37,432 - Campbell - DEBUG - [34.06893, -118.445127]
+2024-03-12 10:50:37,432 - Bona - DEBUG - Writer closed here.
+2024-03-12 10:50:37,432 - Campbell - DEBUG - Begins notifying friends.
+2024-03-12 10:50:37,432 - Bona - DEBUG - Writer closed here.
+2024-03-12 10:50:37,432 - Bona - DEBUG - All friends notified
+2024-03-12 10:50:37,432 - Campbell - DEBUG - Server friend Bailey doesn't know!
+2024-03-12 10:50:37,433 - Campbell - DEBUG - Friend online, sending update to Bailey
+2024-03-12 10:50:37,433 - Campbell - DEBUG - Server friend Jaquez doesn't know!
+2024-03-12 10:50:37,433 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265837.429607 BonaCampbell
 
-2024-03-11 22:23:01,343 - Bailey - DEBUG - Response sent
-2024-03-11 22:23:01,343 - Bailey - DEBUG - Writer closed here.
-2024-03-11 22:23:01,344 - Bailey - DEBUG - Begins notifying friends.
-2024-03-11 22:23:01,344 - Bailey - DEBUG - Server friend Bona doesn't know!
-2024-03-11 22:23:01,344 - Bailey - DEBUG - Server friend Campbell doesn't know!
-2024-03-11 22:23:01,344 - Bailey - DEBUG - Friend online, sending update to Campbell
-2024-03-11 22:23:01,344 - Campbell - INFO - Client established connection.
-2024-03-11 22:23:01,344 - Bailey - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710220981.342274 Bailey
+2024-03-12 10:50:37,433 - Campbell - DEBUG - Response sent
+2024-03-12 10:50:37,433 - Campbell - INFO - Client established connection.
+2024-03-12 10:50:37,433 - Campbell - DEBUG - Writer closed here.
+2024-03-12 10:50:37,433 - Campbell - INFO - Client established connection.
+2024-03-12 10:50:37,433 - Campbell - INFO - Processsing WHATSAT
+2024-03-12 10:50:37,433 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
+2024-03-12 10:50:37,434 - Campbell - DEBUG - All friends notified
+2024-03-12 10:50:37,576 - Campbell - INFO - Google Places API returns 200
+2024-03-12 10:50:50,570 - Bona - INFO - Client established connection.
+2024-03-12 10:50:50,570 - Bona - INFO - Processing IAMAT
+2024-03-12 10:50:50,570 - Bona - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265850.568304
+2024-03-12 10:50:50,570 - Bona - DEBUG - [34.06893, -118.445127]
+2024-03-12 10:50:50,570 - Bona - DEBUG - Hash Table Updated.
+2024-03-12 10:50:50,570 - Bona - DEBUG - Begins notifying friends.
+2024-03-12 10:50:50,570 - Bona - DEBUG - Server friend Clark doesn't know!
+2024-03-12 10:50:50,571 - Bona - DEBUG - Server friend Campbell doesn't know!
+2024-03-12 10:50:50,571 - Bona - DEBUG - Friend online, sending update to Campbell
+2024-03-12 10:50:50,571 - Campbell - INFO - Client established connection.
+2024-03-12 10:50:50,571 - Bona - DEBUG - Server friend Bailey doesn't know!
+2024-03-12 10:50:50,571 - Bona - DEBUG - Friend online, sending update to Bailey
+2024-03-12 10:50:50,571 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265850.568304 Bona
 
-2024-03-11 22:23:01,344 - Bailey - DEBUG - Response sent
-2024-03-11 22:23:01,344 - Campbell - INFO - Client established connection.
-2024-03-11 22:23:01,344 - Campbell - DEBUG - Received request
-2024-03-11 22:23:01,344 - Campbell - INFO - request is WHATSAT kiwi.cs.ucla.edu 10 5
-2024-03-11 22:23:01,344 - Bailey - DEBUG - Writer closed here.
-2024-03-11 22:23:01,344 - Campbell - INFO - Processsing WHATSAT
-2024-03-11 22:23:01,345 - Bailey - DEBUG - All friends notified
-2024-03-11 22:23:01,345 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyCVyseM_rDXtm2-whdDnTMM26nXZE_YtUs
-2024-03-11 22:23:01,359 - Campbell - DEBUG - Received request
-2024-03-11 22:23:01,359 - Campbell - INFO - request is UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710220981.342274 Bailey
-2024-03-11 22:23:01,359 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710220981.342274
-2024-03-11 22:23:01,359 - Campbell - DEBUG - [34.06893, -118.445127]
-2024-03-11 22:23:01,360 - Campbell - DEBUG - Begins notifying friends.
-2024-03-11 22:23:01,360 - Campbell - DEBUG - Server friend Bona doesn't know!
-2024-03-11 22:23:01,360 - Campbell - DEBUG - Server friend Jaquez doesn't know!
-2024-03-11 22:23:01,360 - Campbell - DEBUG - All friends notified
-2024-03-11 22:23:01,768 - Campbell - INFO - Google Places API returns 200
-2024-03-11 22:23:01,830 - Campbell - DEBUG - Writing Response {"html_attributions": [], "next_page_token": "ATplDJZ71S4LA-XjMU8TCvtLxWnzPu6vqYqYfAntSUh_gUwe6VNv0jAe53sKxZ0SIL8kNa4mkZ2AAGT9yIALo52qhhy3xV0NA5X6Oq1z4GGF9FY-AQt1TQ7BGohKQcEpTEVXRZzGZc-WY0jlRTnHfiBifetCMEv05tVlSEENqbgV7W_8T1brimxVOv6NQ5ggSNvpfHPtLkNLV0ftdRd3zmVjBuKBQWup67RVBX6UxnnFO3N5JXTDDswBs0Ox1YcSk0uGzvGV3HzbbqzpDrjttfEyrnSiqJINKOgQT70BNb3vktrr43gwV7A6zf7BzT50CCgHQsQ_cXUTgA6Xy8uHmQ1ZGt0GB-kFlzZU5HmAan59tNB_TvcjoddfxTjsgclPh-iNRFFrljJfpSVuR73zxA9jGfSUIsNFLPCsPHCQB-if9Sfn", "results": [{"geometry": {"location": {"lat": 34.0549076, "lng": -118.242643}, "viewport": {"northeast": {"lat": 34.33730608759191, "lng": -118.155289077463}, "southwest": {"lat": 33.70365193147634, "lng": -118.6681759484859}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png", "icon_background_color": "#7B9EB0", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet", "name": "Los Angeles", "photos": [{"height": 533, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/113235678621954790854\">Dhananjay Baghel</a>"], "photo_reference": "ATplDJbjqb9WrNePPX5OUe7ieDi0mo33FuDnbkY7q-9_07OczT5oZbO1uJyF32EB8pVOa31qDvudtt4Fma7NoOM-CW-r8p3ZRSscpxGMMz9dzpAPQTxPnsBtIo6HRuH5toNGGVyHDx-jTJkEyFX4T_blc9GzQT4dFMsWucOrBF0is84-1412", "width": 800}], "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I", "reference": "ChIJE9on3F3HwoAR9AhGJW_fL-I", "scope": "GOOGLE", "types": ["locality", "political"], "vicinity": "Los Angeles"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 34.0632746, "lng": -118.4409504}, "viewport": {"northeast": {"lat": 34.0646108802915, "lng": -118.4398087197085}, "southwest": {"lat": 34.0619129197085, "lng": -118.4425066802915}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png", "icon_background_color": "#909CE1", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet", "name": "W Los Angeles - West Beverly Hills", "photos": [{"height": 320, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/112226443518685790919\">W Los Angeles - West Beverly Hills</a>"], "photo_reference": "ATplDJYz_SYUMB2ZzsQHPhxVITEfJVwJQlyqaFW_9kSAzBGFidcwlIpxvWIrF4kDH2YnilQoJvo81fa0n8X90b5bZYAVMB5_8NBfwKFfgG7YJzELZdrHwR8GVdu7eS5gORYT2PahA18_d-0_IToEWVULvFHRo0AnA6CgR2b5cgTn3ND8V-Zb", "width": 480}], "place_id": "ChIJffYelYC8woARkChY4cQOzUM", "plus_code": {"compound_code": "3H75+8J Los Angeles, CA, USA", "global_code": "85633H75+8J"}, "rating": 4.2, "reference": "ChIJffYelYC8woARkChY4cQOzUM", "scope": "GOOGLE", "types": ["lodging", "point_of_interest", "establishment"], "user_ratings_total": 1336, "vicinity": "930 Hilgard Avenue, Los Angeles"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 34.0606386, "lng": -118.4429771}, "viewport": {"northeast": {"lat": 34.0620311302915, "lng": -118.4417359197085}, "southwest": {"lat": 34.0593331697085, "lng": -118.4444338802915}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png", "icon_background_color": "#909CE1", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet", "name": "Royal Palace Westwood Hotel", "opening_hours": {"open_now": true}, "photos": [{"height": 1836, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/107513054366925301603\">Jose Solorio Gonzalez</a>"], "photo_reference": "ATplDJb0AFYd13nQrMOaqHENlzB86GcVHUb2nae1vPvmek9V7G-teYNeidoxrlPe7DxwVX8C9nNFB9fsUS5xopHdiKHy7fVsFe-99XEdmsF6nwnY7nz3zfgNz6WUquiIULycrRxboOLau_7fHNv07s4jO4_3JOCgSybltj_Ho2XW6mOp5oMH", "width": 3264}], "place_id": "ChIJ36i1toG8woARHcjs6P2eCkU", "plus_code": {"compound_code": "3H64+7R Los Angeles, CA, USA", "global_code": "85633H64+7R"}, "rating": 4.3, "reference": "ChIJ36i1toG8woARHcjs6P2eCkU", "scope": "GOOGLE", "types": ["lodging", "point_of_interest", "establishment"], "user_ratings_total": 323, "vicinity": "1052 Tiverton Avenue, Los Angeles"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 34.0677284, "lng": -118.4260329}, "viewport": {"northeast": {"lat": 34.06895858029149, "lng": -118.4244877697085}, "southwest": {"lat": 34.0662606197085, "lng": -118.4271857302915}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png", "icon_background_color": "#909CE1", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet", "name": "Beverly Hills Plaza Hotel & Spa", "opening_hours": {"open_now": true}, "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/117181617125728136112\">Yana Berkovich</a>"], "photo_reference": "ATplDJYLbfyFCBt8LHSkXAQoC-zziFJ_HvEtvb8ZSDKMfAafBfYyqaa0XJ1-6RkeLiDwuk7i-EckU_m4yXWUXd29B2oxuMTtYiAdwvkW3ZXgvXXH0gw8GEY5bmr8cuzPsbUXhUO4F8dJkSPhwMaX-eAw0Xf9pMj9jXHToB0PFbDJR5QHDcNt", "width": 4032}], "place_id": "ChIJ5ZA1I3e8woARBzIurF6K3vU", "plus_code": {"compound_code": "3H9F+3H Los Angeles, CA, USA", "global_code": "85633H9F+3H"}, "rating": 4.3, "reference": "ChIJ5ZA1I3e8woARBzIurF6K3vU", "scope": "GOOGLE", "types": ["lodging", "point_of_interest", "establishment"], "user_ratings_total": 496, "vicinity": "10300 Wilshire Boulevard, Los Angeles"}, {"business_status": "OPERATIONAL", "geometry": {"location": {"lat": 34.0699182, "lng": -118.4438495}, "viewport": {"northeast": {"lat": 34.08369004999999, "lng": -118.42986535}, "southwest": {"lat": 34.05716345, "lng": -118.46288875}}}, "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/school-71.png", "icon_background_color": "#7B9EB0", "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/school_pinlet", "name": "University of California, Los Angeles", "photos": [{"height": 3024, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/116588423382001905921\">guy electric</a>"], "photo_reference": "ATplDJaTicz9xFhxR-xS4JdDzBoYIG1VLsMEqW_59gmbTk_ey2CaFQOQDnUCizeUBZt9TUXK1wPn85F4fFSURRSXdDYiB4ll515a8Ya8BWJ-VjkXYivb0nvarTCPzBiuzcvJbvcNn58UGNj1qqQl7GgPXH967JWw7ARvehfjvEWkVtLlWFAh", "width": 4032}], "place_id": "ChIJZQ9c8IW8woARN0gTXFiTqSU", "plus_code": {"compound_code": "3H94+XF Los Angeles, CA, USA", "global_code": "85633H94+XF"}, "rating": 4.6, "reference": "ChIJZQ9c8IW8woARN0gTXFiTqSU", "scope": "GOOGLE", "types": ["university", "point_of_interest", "establishment"], "user_ratings_total": 2400, "vicinity": "Los Angeles"}], "status": "OK"}
+2024-03-12 10:50:50,571 - Bona - DEBUG - Response sent
+2024-03-12 10:50:50,571 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265850.568304 Bona
 
-2024-03-11 22:23:01,830 - Campbell - DEBUG - Response sent
-2024-03-11 22:23:01,830 - Campbell - DEBUG - Writer closed here.
-2024-03-11 22:23:07,236 - Bailey - ERROR - Keyboard Interrupt Detected, Bailey shutting down
-Traceback (most recent call last):
-  File "/Users/mrpentagon/MEGA/CS/131-LANG/herd-server/server.py", line 193, in main
-    await herd_member.server.serve_forever()
-  File "/Users/mrpentagon/anaconda3/lib/python3.11/asyncio/base_events.py", line 369, in serve_forever
-    await self._serving_forever_fut
-asyncio.exceptions.CancelledError
+2024-03-12 10:50:50,572 - Bona - DEBUG - Response sent
+2024-03-12 10:50:50,572 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265850.568304
+2024-03-12 10:50:50,572 - Bona - DEBUG - Writer closed here.
+2024-03-12 10:50:50,572 - Campbell - DEBUG - [34.06893, -118.445127]
+2024-03-12 10:50:50,572 - Bona - DEBUG - Writer closed here.
+2024-03-12 10:50:50,572 - Campbell - DEBUG - Begins notifying friends.
+2024-03-12 10:50:50,572 - Bona - DEBUG - All friends notified
+2024-03-12 10:50:50,572 - Campbell - DEBUG - Server friend Bailey doesn't know!
+2024-03-12 10:50:50,572 - Campbell - DEBUG - Friend online, sending update to Bailey
+2024-03-12 10:50:50,572 - Campbell - DEBUG - Server friend Jaquez doesn't know!
+2024-03-12 10:50:50,573 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265850.568304 BonaCampbell
+
+2024-03-12 10:50:50,573 - Campbell - DEBUG - Response sent
+2024-03-12 10:50:50,573 - Campbell - INFO - Client established connection.
+2024-03-12 10:50:50,573 - Campbell - DEBUG - Writer closed here.
+2024-03-12 10:50:50,573 - Campbell - INFO - Processsing WHATSAT
+2024-03-12 10:50:50,573 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
+2024-03-12 10:50:50,573 - Campbell - DEBUG - All friends notified
+2024-03-12 10:50:50,573 - Campbell - INFO - Client established connection.
+2024-03-12 10:50:50,689 - Campbell - INFO - Google Places API returns 200
+2024-03-12 10:51:06,454 - Bona - INFO - Client established connection.
+2024-03-12 10:51:06,454 - Bona - INFO - Processing IAMAT
+2024-03-12 10:51:06,454 - Bona - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265866.45297
+2024-03-12 10:51:06,454 - Bona - DEBUG - [34.06893, -118.445127]
+2024-03-12 10:51:06,454 - Bona - DEBUG - Hash Table Updated.
+2024-03-12 10:51:06,454 - Bona - DEBUG - Begins notifying friends.
+2024-03-12 10:51:06,454 - Bona - DEBUG - Server friend Clark doesn't know!
+2024-03-12 10:51:06,455 - Bona - DEBUG - Server friend Campbell doesn't know!
+2024-03-12 10:51:06,455 - Bona - DEBUG - Friend online, sending update to Campbell
+2024-03-12 10:51:06,455 - Campbell - INFO - Client established connection.
+2024-03-12 10:51:06,455 - Bona - DEBUG - Server friend Bailey doesn't know!
+2024-03-12 10:51:06,455 - Bona - DEBUG - Friend online, sending update to Bailey
+2024-03-12 10:51:06,455 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265866.45297 Bona
+
+2024-03-12 10:51:06,455 - Bona - DEBUG - Response sent
+2024-03-12 10:51:06,455 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265866.45297 Bona
+
+2024-03-12 10:51:06,455 - Bona - DEBUG - Response sent
+2024-03-12 10:51:06,455 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265866.45297
+2024-03-12 10:51:06,455 - Campbell - DEBUG - [34.06893, -118.445127]
+2024-03-12 10:51:06,455 - Bona - DEBUG - Writer closed here.
+2024-03-12 10:51:06,455 - Campbell - DEBUG - Begins notifying friends.
+2024-03-12 10:51:06,455 - Bona - DEBUG - Writer closed here.
+2024-03-12 10:51:06,456 - Bona - DEBUG - All friends notified
+2024-03-12 10:51:06,456 - Campbell - DEBUG - Server friend Bailey doesn't know!
+2024-03-12 10:51:06,456 - Campbell - DEBUG - Friend online, sending update to Bailey
+2024-03-12 10:51:06,456 - Campbell - DEBUG - Server friend Jaquez doesn't know!
+2024-03-12 10:51:06,456 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265866.45297 BonaCampbell
+
+2024-03-12 10:51:06,456 - Campbell - DEBUG - Response sent
+2024-03-12 10:51:06,456 - Campbell - DEBUG - Writer closed here.
+2024-03-12 10:51:06,456 - Campbell - INFO - Client established connection.
+2024-03-12 10:51:06,457 - Campbell - INFO - Processsing WHATSAT
+2024-03-12 10:51:06,457 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
+2024-03-12 10:51:06,457 - Campbell - DEBUG - All friends notified
+2024-03-12 10:51:06,457 - Campbell - INFO - Client established connection.
+2024-03-12 10:51:06,653 - Campbell - INFO - Google Places API returns 200
+2024-03-12 10:55:40,514 - Bona - DEBUG - Server online.
+2024-03-12 11:08:46,200 - Bona - DEBUG - Server online.
+2024-03-12 11:08:47,325 - Campbell - DEBUG - Server online.
+2024-03-12 11:08:48,324 - Bona - INFO - Client established connection.
+2024-03-12 11:08:48,324 - Bona - INFO - Processing IAMAT
+2024-03-12 11:08:48,324 - Bona - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710266928.321745
+2024-03-12 11:08:48,324 - Bona - DEBUG - [34.06893, -118.445127]
+2024-03-12 11:08:48,324 - Bona - DEBUG - Hash Table Updated.
+2024-03-12 11:08:48,324 - Bona - DEBUG - Begins notifying friends.
+2024-03-12 11:08:48,325 - Bona - DEBUG - Server friend Clark doesn't know!
+2024-03-12 11:08:48,325 - Bona - DEBUG - Server friend Campbell doesn't know!
+2024-03-12 11:08:48,325 - Bona - DEBUG - Friend online, sending update to Campbell
+2024-03-12 11:08:48,325 - Bona - DEBUG - Server friend Bailey doesn't know!
+2024-03-12 11:08:48,325 - Bona - DEBUG - Friend online, sending update to Bailey
+2024-03-12 11:08:48,326 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710266928.321745 Bona
+
+2024-03-12 11:08:48,326 - Bona - DEBUG - Response sent
+2024-03-12 11:08:48,326 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710266928.321745 Bona
+
+2024-03-12 11:08:48,326 - Bona - DEBUG - Response sent
+2024-03-12 11:08:48,326 - Campbell - INFO - Client established connection.
+2024-03-12 11:08:48,326 - Bona - DEBUG - Writer closed here.
+2024-03-12 11:08:48,326 - Bona - DEBUG - Writer closed here.
+2024-03-12 11:08:48,326 - Bona - DEBUG - All friends notified
+2024-03-12 11:08:48,326 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710266928.321745
+2024-03-12 11:08:48,326 - Campbell - DEBUG - [34.06893, -118.445127]
+2024-03-12 11:08:48,326 - Campbell - DEBUG - Begins notifying friends.
+2024-03-12 11:08:48,327 - Campbell - DEBUG - Server friend Bailey doesn't know!
+2024-03-12 11:08:48,327 - Campbell - DEBUG - Friend online, sending update to Bailey
+2024-03-12 11:08:48,327 - Campbell - INFO - Client established connection.
+2024-03-12 11:08:48,327 - Campbell - DEBUG - Server friend Jaquez doesn't know!
+2024-03-12 11:08:48,327 - Campbell - INFO - Processsing WHATSAT
+2024-03-12 11:08:48,328 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
+2024-03-12 11:08:48,339 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710266928.321745 BonaCampbell
+
+2024-03-12 11:08:48,339 - Campbell - DEBUG - Response sent
+2024-03-12 11:08:48,340 - Campbell - DEBUG - Writer closed here.
+2024-03-12 11:08:48,340 - Campbell - INFO - Client established connection.
+2024-03-12 11:08:48,340 - Campbell - DEBUG - All friends notified
+2024-03-12 11:08:48,625 - Campbell - INFO - Google Places API returns 200
