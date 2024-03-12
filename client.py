@@ -11,7 +11,6 @@ async def send_request(reader, writer, str):
 
 
 async def main():
-    reader, writer = await asyncio.open_connection("127.0.0.1", 10000)
     requests = [
     f"IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 {time.time()}\n",
     "WHATSAT kiwi.cs.ucla.edu 10 5\n",
@@ -24,12 +23,18 @@ async def main():
     "WHATSAT kiwi.cs.ucla.edu 10 5\n",
     "FLUFFYDOG\n"
     ]
-    for request in requests:
-        await send_request(reader, writer, request)
-    
-    writer.close()
-    await writer.wait_closed()
-        
 
+    requests2 = [
+        [f"IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 {time.time()}\n", 10000],
+        ["WHATSAT kiwi.cs.ucla.edu 10 5\n", 10002]
+    ]
+
+    for request in requests2:
+        msg, port = request
+        reader, writer = await asyncio.open_connection("127.0.0.1", port)
+        await send_request(reader, writer, msg)
+        writer.close() 
+        await writer.wait_closed()
+        
 asyncio.run(main())
 
