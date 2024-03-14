@@ -1,11 +1,12 @@
-2024-03-12 10:51:06,452 - DEBUG - Using selector: KqueueSelector
-2024-03-12 10:51:06,454 - DEBUG - Request sent: IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710265866.45297
-2024-03-12 10:51:06,456 - INFO - Got response AT Bona 0.0017058849334716797 kiwi.cs.ucla.edu +34.068930-118.445127 1710265866.45297
+2024-03-12 11:25:07,650 - DEBUG - Using selector: KqueueSelector
+2024-03-12 11:25:07,652 - DEBUG - Request sent: IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710267907.650902
+2024-03-12 11:25:07,655 - INFO - Got response AT Bona 0.0025739669799804688 kiwi.cs.ucla.edu +34.068930-118.445127 1710267907.650902
 
-2024-03-12 10:51:06,456 - DEBUG - Request sent: WHATSAT kiwi.cs.ucla.edu 10 2
-2024-03-12 10:51:06,705 - INFO - Got response {
+2024-03-12 11:25:07,656 - DEBUG - Request sent: WHATSAT kiwi.cs.ucla.edu 10 2
+2024-03-12 11:25:08,511 - INFO - Got response AT Campbell +1.00 kiwi.cs.ucla.edu +34.06893-118.445127 1710267907.650902
+{
     "html_attributions": [],
-    "next_page_token": "ATplDJY8J7FdovP3NF6efOImqsHtz1JgakwzVg21NONX-cpnh-5FMwKxWb4TaouYp4UFu9DRX5lC65HJwQUutQUUq6UCb3cCKv2xByTyXynR2fIjiUJj9xZovv1thqu8QXnUPELo9IaqBwmOBlAzPCg6sUGH112YR5XKan02eF296Y05WqrcecdrXtahZ1aeEAcBzp7uLy-0dLDC8mwLrHxTUX2OMt0jPHBvPTL8UxfXmpsedJX1ly2oQYb9H0p5e029P48SzcxPXVmgCv-erR_QyB9CC5cjM2ZGe8XrdAW9wDQVW19JHQPRkmHAe8QJyfymFipkXjgrT2V0-QJnzVTVPb-QrEhsaKiWKvHVXx0YVfFneviDzJG29lhSHG4gvfwZqidgzT_5PUbyT5-PIg48o7BrlKEo3rZVnWDbNU2Nnas",
+    "next_page_token": "ATplDJbZEF2LhFOnkHK0L-CzkBKd_LwRSnl7Cqzw2XGhQHxHuxUbFVxat5YtGrdxu1V4gnux2yVeC4Afl7OnVuuV7H7ocf2VksCzdOGYXPk4C8_9wr417mHEe0z1yaxCdrcO74DG9CYKsdFFZsX4xrLa_aQTBC1QAIdVp6qY5wCzDAUPzxg810u5lB2eNCJVuGtgsM5lc-ZPTdr1dNs1dcHd1DBrZkOUsY455nEK55vEgtSqPgNbvDXZYirAe5XUiTHDfWqvFf39pbyEZ_xU4WWznaxnaoEuL-XMx7QHmuxcgt-6uW3VO8jGjLluYTPlEy25B94kAE5WN_l9jNRIG_NvxAKm_zvUAcZgde89DDIqeBEiZdYEV2fuZSmJ1CmMlyg2fEG_Dpx1tXsnnP0K31SueG2ThH-249ldlpf5JxvZDUYp",
     "results": [
         {
             "geometry": {
@@ -34,7 +35,7 @@
                     "html_attributions": [
                         "<a href=\"https://maps.google.com/maps/contrib/113235678621954790854\">Dhananjay Baghel</a>"
                     ],
-                    "photo_reference": "ATplDJYmD_vSAPp7ZVhCSAow7sch6RMGh497lOv6E875wGuX2p6z_M8FAAoDaUAAAOK0lyDaE-C1QIQ1E-jHPF9AnGrZ-2TlxCgFmayioJtMg4cZsLYrMKZcl4XTYQLodKMqTe_t7Y75KDj0GsCHDC1EGVUbQztUnx0g1EVcVz_hGELG0ufx",
+                    "photo_reference": "ATplDJbul1jilL0XVESsO493FEtGAdgVJGmsIGu4_yCw4dqtr-pCxGPJzfkTi3WU5q2REW8ClqT7lPw4EQw0GV0yPUmk9HZ-loxbfERtrKpgObt9QorAK_vBY-jxxYV84thvYtZpCMhSPBhYJ1x21FH9CDgX331GifHWQfMQYmwSaSWRpmP9",
                     "width": 800
                 }
             ],
@@ -75,7 +76,7 @@
                     "html_attributions": [
                         "<a href=\"https://maps.google.com/maps/contrib/112226443518685790919\">W Los Angeles - West Beverly Hills</a>"
                     ],
-                    "photo_reference": "ATplDJbami50xYnAHrkx5Laxj_vqCypoAaeB1gZCCpNJMv12hyfPpOevFAO_T3HdHUtGuPboEp5tq5tVSlHQFV3sZZBTyjbrUI1ZxcFhWIBm7eE_XER2t5iN01d8zASLP1TpYwp1PenW5FuXPA-_p0Tpc82p94GhRhb3rrVs67qvOsiEq7NP",
+                    "photo_reference": "ATplDJangSClO4WzNalWSaQCVh-QzKJZtjNpKF1BfepLogz8kDBmoQlcHW_ME3gJxJjXXIcfg60BOnWIti0WTvEiY4s3JsfL1J4DIqIRstW1CNrf__NoTotLMhmkQc2fg7QyC3U0gkfXxEU8W27UG1wxe7kNdWXZeb-N_dw_qfoCSaTZvE5Q",
                     "width": 480
                 }
             ],
@@ -99,15 +100,15 @@
     "status": "OK"
 }
 
-2024-03-12 11:08:48,321 - DEBUG - Using selector: KqueueSelector
-2024-03-12 11:08:48,323 - DEBUG - Request sent: IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710266928.321745
-2024-03-12 11:08:48,326 - INFO - Got response AT Bona 0.002978086471557617 kiwi.cs.ucla.edu +34.068930-118.445127 1710266928.321745
+2024-03-12 11:27:25,622 - DEBUG - Using selector: KqueueSelector
+2024-03-12 11:27:25,624 - DEBUG - Request sent: IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710268045.622473
+2024-03-12 11:27:25,628 - INFO - Got response AT Bona 0.003368854522705078 kiwi.cs.ucla.edu +34.068930-118.445127 1710268045.622473
 
-2024-03-12 11:08:48,327 - DEBUG - Request sent: WHATSAT kiwi.cs.ucla.edu 10 2
-2024-03-12 11:08:48,637 - INFO - Got response AT Campbell +1.00 kiwi.cs.ucla.edu +34.06893-118.445127 1710266928.321745
+2024-03-12 11:27:25,630 - DEBUG - Request sent: WHATSAT kiwi.cs.ucla.edu 10 2
+2024-03-12 11:27:26,337 - INFO - Got response AT Campbell +1.00 kiwi.cs.ucla.edu +34.06893-118.445127 1710268045.622473
 {
     "html_attributions": [],
-    "next_page_token": "ATplDJb_7ldwjRiwLOtIE6DtznkUPzu_yvLaxAmkLh8mrCf5HlQj6Th_hyvnreV2eVS-8vtmFwxCZKNN_tgc2rhzM-ekSae5gQ1SwNbtTg_66Dtss00vF6ONnHV_rXioCCg4CJRwFWNb6GTOUUPwMvakAMuz6q5glVTcz9GTDssQWK23SOH_9XamaCzXFbIKchPnKmtpUeOcLUdxd5HkgkCbb8VjdZsbD9PoCyrqH1zGzSd5R1UyDhiCwsUbdBf7WwV0AZtZwk_HjbkYhwHXt7N7oz3NxXi0JR66BYeKGCPgnR4wvwZd3w57J-Jw0pkWaI-DhZiGu51uETD-0Gj5gqlLzU2ViWbeWW60pUDxe0hx8o2sK3BrpVkknfmmcWZAGhMoPGgzpGoOVsU313mHcNTsdCA_rZz4iaFBHweUwG_Ygrw",
+    "next_page_token": "ATplDJZEOVA5L9N-JXNN7EimKKXAf1iGnwK98m1XF69qpjJxIzVA3op0gUwqGnvTYW0hW-42s8CbOx9S4tJFO3ds04VVXRWKMrwCRs8nutz-sc0He7t-oFl-8eOa_sBT6HTpCUBIITOjd3uYBBuLy6wLnKGmpS0-FcH8De63txyNXcBeK2FAMEMniyzuX_bfwI2Hp6RkGUuGO9ji_87Sd-HOfamX2sdUDF_o3hJ2eVpUvlE3dau3GbMH6EXIxeT53ZXm0mZt9K7kZuX-G1w4pYEp_tHY7kkXokwOSH61P3RfbrnAHxfIFDcB0xcyUFPMMZfHtzTBU4N9tPfmBInb6REHGL8yiZ6y85DpgBUlSS_Tf7yWkCBdDML5ebNe7qKqnlVlHvZPo5XVEMQOWhpHiMopA3rouhFz0BpXOs_UETxzsDjA",
     "results": [
         {
             "geometry": {
@@ -136,7 +137,7 @@
                     "html_attributions": [
                         "<a href=\"https://maps.google.com/maps/contrib/113235678621954790854\">Dhananjay Baghel</a>"
                     ],
-                    "photo_reference": "ATplDJZDgAza1DSAVN8giGSaqoEe-R5RJVgLz-ddvdrgM5wNs--iTlXlqziUSXqHyy5J_9IpC-BWWxkYB7V0KBLgHQLkMW7P5lQJBTcRd_SdQc8MuPaEPBspjzuYx5lzdU1kNq50v4oO5eZPRXff46psQ3TlnJvYG1y_cVJ9JkXaxeqyvXJq",
+                    "photo_reference": "ATplDJY2C5rHNuCI1Xb2mzqFj9-ZP-M3T_JG1QL_hiCf1ch6A4ymxlTYG6_4dSXZhLqY7H80vkjrB0Li3JhP1FSYITTSyejMVnno1NUcFFuAzEgzu8Td9qYfeHZ-M_QhWlksnBr0xl6nVluB-1aq4t8v3FojY-4csVivCg1bPFghc3Wx1Kxe",
                     "width": 800
                 }
             ],
@@ -177,7 +178,415 @@
                     "html_attributions": [
                         "<a href=\"https://maps.google.com/maps/contrib/112226443518685790919\">W Los Angeles - West Beverly Hills</a>"
                     ],
-                    "photo_reference": "ATplDJaKcdk9rfB7h9LxYr7GpqMM_EXhSpu6oQAxFjMRLzVm4113mcjE0iMG2mLZokWhTzI3MYWy35F1wDuAAblQ864XQLae-kpWhVJ1eqXAcu2dr9CpLe-J1x3s__k7nirZPzaDv28IXIescfgXM6u-8LvFVc6hZ69s-E__SMpNME32ORrk",
+                    "photo_reference": "ATplDJaPbeh5oXMeinfm7F0aeoLc-yrRsrjrA4ZPmsIPnMZcPrClKYVmFBvUpUgJwCWhsZA_2RpGIwnMjCt4MKjkG9O0JqIoKpLTm94a7eL34zqsfkP6tOWNValSSmr9d6DrpdEtZoydHrgDLNAK01DqR4BVqOns1CBFFiD3oW-eC6powHVI",
+                    "width": 480
+                }
+            ],
+            "place_id": "ChIJffYelYC8woARkChY4cQOzUM",
+            "plus_code": {
+                "compound_code": "3H75+8J Los Angeles, CA, USA",
+                "global_code": "85633H75+8J"
+            },
+            "rating": 4.2,
+            "reference": "ChIJffYelYC8woARkChY4cQOzUM",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1336,
+            "vicinity": "930 Hilgard Avenue, Los Angeles"
+        }
+    ],
+    "status": "OK"
+}
+
+2024-03-12 11:28:20,611 - DEBUG - Using selector: KqueueSelector
+2024-03-12 11:28:20,613 - DEBUG - Request sent: IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710268100.61133
+2024-03-12 11:28:20,615 - INFO - Got response AT Bona 0.0021209716796875 kiwi.cs.ucla.edu +34.068930-118.445127 1710268100.61133
+
+2024-03-12 11:28:20,616 - DEBUG - Request sent: WHATSAT kiwi.cs.ucla.edu 10 2
+2024-03-12 11:28:21,107 - INFO - Got response AT Campbell +1.00 kiwi.cs.ucla.edu +34.06893-118.445127 1710268100.61133
+{
+    "html_attributions": [],
+    "next_page_token": "ATplDJYRs9N32qLiM4RoNCY-BrYsOY0ao0BFpTHe5BNdLGfE43cCq33aNvHhM03GxAnQI9mdBS77nq2NUO2zry-5PnuCSozMnae0RCPU6nXiqo7cTEXv8k8o1jYCvOFwqhByzvV6mVtI_1cprhm8JgdyIZCvS4fYYJpMbhoPkeMVIPbP35V6O89BfiNAjY6LAvXaQML9zPPnWYNbVQvts2l4B28r4e0aHbQPCFzER44mPgj-CnrcU-yiU_kt5LrmbyNNzUHvKEWP6bS_SWauAqRHf4M04BlG60JzIp32XNP95zuHlbd0ZGPbSJGlnOVAB3ls7Z3xe0sc21E-xVaLAVdjUERuQ1UXDY4sZkl7CpUq1YXDpxIi-_RLkXAN0hip61EPzI1PSpcm3obRUtTLFjp7EyqJ84LxtldZkw670_bIjowT",
+    "results": [
+        {
+            "geometry": {
+                "location": {
+                    "lat": 34.0549076,
+                    "lng": -118.242643
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 34.33730608759191,
+                        "lng": -118.155289077463
+                    },
+                    "southwest": {
+                        "lat": 33.70365193147634,
+                        "lng": -118.6681759484859
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+            "icon_background_color": "#7B9EB0",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Los Angeles",
+            "photos": [
+                {
+                    "height": 533,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/113235678621954790854\">Dhananjay Baghel</a>"
+                    ],
+                    "photo_reference": "ATplDJb0koSJz23ugTZC4mHPkoddUsuh2I_Mk089P7DsPrWiC1Eqc2VIizMj1CwRMjbIV3-D-vBzzKqj-owMa2zN5SJBXJfChTdrCk89h42no8wm7gTld1aAUubxTeJ7Ix6gxiRlddyzr--OsYHy0D6UQG61tRWVmdgIx9HHhKx_aPtie2W1",
+                    "width": 800
+                }
+            ],
+            "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+            "reference": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+            "scope": "GOOGLE",
+            "types": [
+                "locality",
+                "political"
+            ],
+            "vicinity": "Los Angeles"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 34.0632746,
+                    "lng": -118.4409504
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 34.0646108802915,
+                        "lng": -118.4398087197085
+                    },
+                    "southwest": {
+                        "lat": 34.0619129197085,
+                        "lng": -118.4425066802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+            "name": "W Los Angeles - West Beverly Hills",
+            "photos": [
+                {
+                    "height": 320,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/112226443518685790919\">W Los Angeles - West Beverly Hills</a>"
+                    ],
+                    "photo_reference": "ATplDJZkYV8IEpdo6YyJIzrVEtfKNQwwpAlJ6FmY4-2BT2o7SjcciSCzfiSLy2xezL6S5q4EEio3RUrF8nYE9wC44TJNlKkxciG8pRe923I_glHtz1RNt0RcSJZxUvJ21lGdshXAm7p4DiigFaMeD8SmBiuX7c4epCHERlzazwYvrJGN0QH4",
+                    "width": 480
+                }
+            ],
+            "place_id": "ChIJffYelYC8woARkChY4cQOzUM",
+            "plus_code": {
+                "compound_code": "3H75+8J Los Angeles, CA, USA",
+                "global_code": "85633H75+8J"
+            },
+            "rating": 4.2,
+            "reference": "ChIJffYelYC8woARkChY4cQOzUM",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1336,
+            "vicinity": "930 Hilgard Avenue, Los Angeles"
+        }
+    ],
+    "status": "OK"
+}
+
+2024-03-12 11:32:08,238 - DEBUG - Using selector: KqueueSelector
+2024-03-12 11:32:08,240 - DEBUG - Request sent: IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710268328.2386088
+2024-03-12 11:32:08,242 - INFO - Got response AT Bona 0.0020432472229003906 kiwi.cs.ucla.edu +34.068930-118.445127 1710268328.2386088
+
+2024-03-12 11:32:08,243 - DEBUG - Request sent: WHATSAT kiwi.cs.ucla.edu 10 2
+2024-03-12 11:32:08,569 - INFO - Got response AT Campbell +1.00 kiwi.cs.ucla.edu +34.06893-118.445127 1710268328.2386088
+{
+    "html_attributions": [],
+    "next_page_token": "ATplDJa2HcDqxB-zlcXkiL_WOltmhq59ivJ33lvK_1qms-eItywCga1Frg5922qj68IcuANZK9cbCUZ-SN4eO0C5nsS9CRGGN7q3J-WeZz7JpjoEXBhmiUFuCvba24CnExSQ5blX-jRfzQlK3AM8K93raDZ3mK1fQMsE9WI9jlEu2tdjEVAKWOw4fELk2OxND-QQMo48c1M4KkbE93TJMWSYZaLpLjvuGDjX9lDlh0ARo-f22L3oxuQsKTPnRvcuUn3LgPB8avDMlk_s02GcvUovsrM9hS6dvtE3nxixPi_5beqYMWRDJWYEgIRTwVcVnEb3vfjoXgXSCDZZ-9NCqsVTPWnR-6hEAjuguhyfn2cLts6gF1p927tMnxOjBSMXXCAeNKnCcmV4g2I2_KTcGcWcA1znAlC5zxKTgveQk4mQd1Vm",
+    "results": [
+        {
+            "geometry": {
+                "location": {
+                    "lat": 34.0549076,
+                    "lng": -118.242643
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 34.33730608759191,
+                        "lng": -118.155289077463
+                    },
+                    "southwest": {
+                        "lat": 33.70365193147634,
+                        "lng": -118.6681759484859
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+            "icon_background_color": "#7B9EB0",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Los Angeles",
+            "photos": [
+                {
+                    "height": 533,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/113235678621954790854\">Dhananjay Baghel</a>"
+                    ],
+                    "photo_reference": "ATplDJacEdtX_oBgXj1US7h8_V7Ut9meBlG24QK256ELT_-GZBd4aSGxpWPGdaBEOfhk8vJ6fmQ5ukuHzmIRKgOHEtlV38JXPCa827in0Z3uSvocQVwMXEs3kJVqPNSjp6--Br5OzcUWSqqWQ4U4awRawa0_-2r4TRTWXYjkYzKTjG6QSr6b",
+                    "width": 800
+                }
+            ],
+            "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+            "reference": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+            "scope": "GOOGLE",
+            "types": [
+                "locality",
+                "political"
+            ],
+            "vicinity": "Los Angeles"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 34.0632746,
+                    "lng": -118.4409504
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 34.0646108802915,
+                        "lng": -118.4398087197085
+                    },
+                    "southwest": {
+                        "lat": 34.0619129197085,
+                        "lng": -118.4425066802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+            "name": "W Los Angeles - West Beverly Hills",
+            "photos": [
+                {
+                    "height": 320,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/112226443518685790919\">W Los Angeles - West Beverly Hills</a>"
+                    ],
+                    "photo_reference": "ATplDJY-7VlQv0fPpvuAIiwEluuUFFO7ht1ZrdYGWgbdJmN60bvbCk5XyU_ZDy4UEVlzgqbiIjYyrSEP69FtYnim1ifZVaBuQ5tix01OCkF3iG_14p03UsUoSK-z_sD-YijXB34A8xrbxkjTaVFuZS0QvIH-Bu_M0UJ8snDUW8MtVyT0-CHs",
+                    "width": 480
+                }
+            ],
+            "place_id": "ChIJffYelYC8woARkChY4cQOzUM",
+            "plus_code": {
+                "compound_code": "3H75+8J Los Angeles, CA, USA",
+                "global_code": "85633H75+8J"
+            },
+            "rating": 4.2,
+            "reference": "ChIJffYelYC8woARkChY4cQOzUM",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1336,
+            "vicinity": "930 Hilgard Avenue, Los Angeles"
+        }
+    ],
+    "status": "OK"
+}
+
+2024-03-12 11:33:41,743 - DEBUG - Using selector: KqueueSelector
+2024-03-12 11:33:41,746 - DEBUG - Request sent: IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710268421.7442582
+2024-03-12 11:33:41,748 - INFO - Got response AT Bona 0.002507925033569336 kiwi.cs.ucla.edu +34.068930-118.445127 1710268421.7442582
+
+2024-03-12 11:33:41,749 - DEBUG - Request sent: WHATSAT kiwi.cs.ucla.edu 10 2
+2024-03-12 11:33:42,254 - INFO - Got response AT Campbell +1.00 kiwi.cs.ucla.edu +34.06893-118.445127 1710268421.7442582
+{
+    "html_attributions": [],
+    "next_page_token": "ATplDJYaSnwcpqDbtcI-ss8TZgq-BuygtwBFGGDbL2sCJDRF04wuEbBI7iMYjDM6wKnuQ-mXqaPdY3SdAJ9v0zYwr61oQaxxDSAWMqliEDhfxmZXSEFKg_bDgZBe7unGhUVebu2qMw-axbemZNeb4JioV9e0PO920eyEB9We2a5izuUS5tEk_d_BYwbPxpkhJNu7pBVTXeGfWNwDN4idJMnXObYFrIfl64p3mW6PrF2_ng3eSOIMYV1VYKzoomekWQePSTwEs4wgbk-ATaym_pczcm2SCHuudvKs-fkrarKRO_T4dQxU-l5AODziHUNqa8dsHWKqg9XmvmMWDjlvXOZytSCmzqor8lxPwJV5TrulbNFn0eQaSmxGyuo_dGeHPpI3LsEamtPG8qrpApRcxHqCUu3ZJe1IWBEjniwgrau3GHcU",
+    "results": [
+        {
+            "geometry": {
+                "location": {
+                    "lat": 34.0549076,
+                    "lng": -118.242643
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 34.33730608759191,
+                        "lng": -118.155289077463
+                    },
+                    "southwest": {
+                        "lat": 33.70365193147634,
+                        "lng": -118.6681759484859
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+            "icon_background_color": "#7B9EB0",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Los Angeles",
+            "photos": [
+                {
+                    "height": 533,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/113235678621954790854\">Dhananjay Baghel</a>"
+                    ],
+                    "photo_reference": "ATplDJbLszuBkTluzuUyUjWpxLN5Y-A_3hZ--I5Wjhx4NR4EZSWkvUSqkzc9IyCtKcPARJlkQUH1-dkjp_AOZig1isOxvI4Uiu7ZEr-bY3k939m06CWIrynTaFmV4KrsXRuXBhs-RWDq2rL10ViL9NL6Qt6wuFs191hBn2w2vxc7WBcycmIo",
+                    "width": 800
+                }
+            ],
+            "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+            "reference": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+            "scope": "GOOGLE",
+            "types": [
+                "locality",
+                "political"
+            ],
+            "vicinity": "Los Angeles"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 34.0632746,
+                    "lng": -118.4409504
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 34.0646108802915,
+                        "lng": -118.4398087197085
+                    },
+                    "southwest": {
+                        "lat": 34.0619129197085,
+                        "lng": -118.4425066802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+            "name": "W Los Angeles - West Beverly Hills",
+            "photos": [
+                {
+                    "height": 320,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/112226443518685790919\">W Los Angeles - West Beverly Hills</a>"
+                    ],
+                    "photo_reference": "ATplDJZocg05TvJMvubX8XuUK_lL-oFYglZilqthhHC_bsQzKCQ4UiAnZ5-r540WoZ6bFu8lQ6tW33YJTHqGHS3sV6ma1dViLYNNOWQqKJZlsZl-IX0onYoPuKhpIwTFkJ4_yiOWoOluOAGsUyowX9uDxg51s2NK6tWTEl5E6klAAIGsKn11",
+                    "width": 480
+                }
+            ],
+            "place_id": "ChIJffYelYC8woARkChY4cQOzUM",
+            "plus_code": {
+                "compound_code": "3H75+8J Los Angeles, CA, USA",
+                "global_code": "85633H75+8J"
+            },
+            "rating": 4.2,
+            "reference": "ChIJffYelYC8woARkChY4cQOzUM",
+            "scope": "GOOGLE",
+            "types": [
+                "lodging",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1336,
+            "vicinity": "930 Hilgard Avenue, Los Angeles"
+        }
+    ],
+    "status": "OK"
+}
+
+2024-03-12 11:35:07,063 - DEBUG - Using selector: KqueueSelector
+2024-03-12 11:35:07,065 - DEBUG - Request sent: IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433
+2024-03-12 11:35:07,068 - INFO - Got response AT Bona 0.002099752426147461 kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433
+
+2024-03-12 11:35:07,068 - DEBUG - Request sent: WHATSAT kiwi.cs.ucla.edu 10 2
+2024-03-12 11:35:07,307 - INFO - Got response AT Campbell +1.00 kiwi.cs.ucla.edu +34.06893-118.445127 1710268507.06433
+{
+    "html_attributions": [],
+    "next_page_token": "ATplDJZYT8rMzp1QpeD_yQqSf-wuuwafVbXvv_AQ-mkxwr1f5xpw8Y_jvoXY_VdoeafwMAdh3t1kyFJ9qhd64xT-OdIL3_umnXuGMOaqRhqImqPayIXR0-XEADuMfFlQOD19xOGjs1Q5uL6qVYi9ISj0GF_zfONsc0Y9ln1aTv03C5CKy71DeUJ2AdimTpHT8RrNhXgO8AzJjVs3Nf7JbBsoYHI6IKjbcFdJ8ZoOJRIFbhmfQ1SvUVYk0BjLiUk0GDKFzEoop3I9BqgMu3BuK083M1FhMO0MAQKGyGbi7NtNc2AQlJnZxVvhF3iBqojlnhxhGRbJe4nXxTny96RVJ-yfqo938AoRmskSU7hah0uvWKOxsCjACJFI5PboK1FSMIAMCCjS1YMVpgc2DwvT_j7_UipiCqGKSHU9xpjhv-QjdZOk",
+    "results": [
+        {
+            "geometry": {
+                "location": {
+                    "lat": 34.0549076,
+                    "lng": -118.242643
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 34.33730608759191,
+                        "lng": -118.155289077463
+                    },
+                    "southwest": {
+                        "lat": 33.70365193147634,
+                        "lng": -118.6681759484859
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+            "icon_background_color": "#7B9EB0",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Los Angeles",
+            "photos": [
+                {
+                    "height": 533,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/113235678621954790854\">Dhananjay Baghel</a>"
+                    ],
+                    "photo_reference": "ATplDJb379eLNZRhvMlquvx_7f2ILyRP289SyeX3EItF1y7DSYddyBliOdlWiJj_M9SqzV55UWbIT3wsx5vOOPFoqOKWZM8BkBwHvT8UbphiQPG12TQtK0zPJ9XFgsP4GGiL7DyygHOEykNZbcGPvDk6M-xlFUzs92GpmhC1zuWzptmlbM0I",
+                    "width": 800
+                }
+            ],
+            "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+            "reference": "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+            "scope": "GOOGLE",
+            "types": [
+                "locality",
+                "political"
+            ],
+            "vicinity": "Los Angeles"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 34.0632746,
+                    "lng": -118.4409504
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 34.0646108802915,
+                        "lng": -118.4398087197085
+                    },
+                    "southwest": {
+                        "lat": 34.0619129197085,
+                        "lng": -118.4425066802915
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+            "icon_background_color": "#909CE1",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+            "name": "W Los Angeles - West Beverly Hills",
+            "photos": [
+                {
+                    "height": 320,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/112226443518685790919\">W Los Angeles - West Beverly Hills</a>"
+                    ],
+                    "photo_reference": "ATplDJYPqRPKlphgV9hyvBiAwBPmYKgCDxdluMBxO3dQ2F6UuV6C3te5jvGNyeDkpp3YEmEiBCFX4Bi0mj9RD5Ah5sLTqMgPXZNsle8FtBYGV9qAXMEcgppQMzOjVOAGqnb5-guN2c5eF1tNhlTySNk-hvk2Fhjb7RwA-U71G3HJ4Una6Npe",
                     "width": 480
                 }
             ],

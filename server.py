@@ -33,7 +33,7 @@ class HerdServer:
 
     async def create_server(self):
         self.server = await asyncio.start_server(
-            self.handel_request_clean, port=self.myport, family=socket.AF_INET
+            self.handel_request_clean, host="127.0.0.1", port=self.myport, family=socket.AF_INET
         )
         logging.debug("Server online.", extra=self.extra)
 
@@ -87,13 +87,14 @@ class HerdServer:
                 return places + "\n\n"
 
     async def write_and_close(self, writer, response): 
+        response = response.rstrip('\n')
         logging.debug(f"Writing Response {response}")
         writer.write(response.encode())
         await writer.drain()
-        logging.debug(f"Response sent")
+        # logging.debug(f"Response sent")
         writer.close()
         await writer.wait_closed()
-        logging.debug("Writer closed here.")
+        # logging.debug("Writer closed here.")
     
     async def open_connection(self, name):
         try:
@@ -113,6 +114,8 @@ class HerdServer:
                     msg = f"UPDATE {req[1]} {req[2]} {req[3]} {signatures}{self.name}\n"
                     logging.debug("Friend online, sending update to " + server_mate)
                     writes.append(self.write_and_close(writer1, msg))
+                else:
+                    logging.debug("Friend not online, skipping.")
         
         await asyncio.gather(*writes)
         logging.debug("All friends notified")
@@ -164,10 +167,9 @@ class HerdServer:
         return request
     
     async def handel_request_clean(self, reader, writer):
-        logging.info("Client established connection.")
         request = await reader.read(1000)
         request = request.decode().strip()
-
+        logging.info(f"Input: {request}")
         response = "? " + request + "\n"
         if(request.startswith("IAMAT")):
             response = await self.handle_set(request)
@@ -202,7 +204,7 @@ async def main():
         logging.info("Server is shutting down.")
         herd_member.server.close()
     except Exception as e:
-        logging.error("Exception encountered, shutting down.")
+        logging.error("Exception encountered, shutting down." + e.__str__())
 
 if __name__ == "__main__":
     asyncio.run(main())

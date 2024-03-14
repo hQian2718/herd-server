@@ -88,7 +88,7 @@
 \date{}
 
 % make title bold and 14 pt font (Latex default is non-bold, 16 pt)
-\title{\Large \bf Evaluating Python's asyncio for }
+\title{\Large \bf Evaluating Python's asyncio for Herd Server Architecture}
 
 %for single author (just remove % characters)
 \author{
@@ -105,288 +105,118 @@
 %-------------------------------------------------------------------------------
 \section{Introduction}
 %-------------------------------------------------------------------------------
-Rust is a modern, low level language with a significant focus
-on safe memory management and catching memory errors
-early. In this report, we examine the possibility of using Rust 
-to write a parallelized version of regex-search through log files.
-Specifically, we will analyze the approach of the language in terms
-of security, ease of use, flexibility, generality, performance, and 
-reliability. 
+This report investigates the pros and cons of using Python's asyncio
+library to implement server herds in an attempt to update our company's 
+service architecture. 
 
-GNU grep offers a standard, powerful tool that searches files
-for lines that match regular expressions. However, due to its
-sequential nature, when processing a line that is several gigabytes 
-long, GNU Grep needs to allocate sufficient memory to store 
-the entire line in memory for processing, which will impact performance
-and caching, especially if swaps between disk and memory occur frequently.
+In our proposed model, several peripheral servers will handle client requests
+and frequently updated data, like GPS information from cell phones. These 
+servers will talk to each other to quickly and efficiently update each other's records
+without the need to update a central database server. Clients should be able to
+query any server and get updated responses.
 
-Additionally, if we are to search through multiple files, grep only 
-goes through them one at a time, using one core. This is a waste of 
-our company's computational resources as other cores stand idle.
+\section{Overview of asyncio}
+\texttt{asyncio} is introduced in Python 3. It's a library for using a event-driven, coroutine-based approach to handle I/O bound applications. It's widely used in network I/O contexts. In this report, we will evaluate asyncio's availability for our project.
 
-Parallelizing could address these problems. However, we also need
-to consider the possibility that I/O will be a major bottleneck as we speed up.
-%-------------------------------------------------------------------------------
-\section{Rust's Ease of Use Features}
-%-------------------------------------------------------------------------------
-Rust provides a relatively complete and well-maintained 
-ecosystem around its core language. For example, it provides
-an official package manager, cargo, out-of-the-box. This makes
-it easier to find and use modules (called crates) compared to
-C / C++, which makes development smoother. Many utility 
-functions and helpful classes to our parallelization project
-can be found on cargo.io, the Rust crate registry similar to NPM.
+\section{Comparison to Java}
 
-In fact, a quick search reveals a promising starting point to our
-exact application. \texttt{ripgrep} is a public domain project 
-(with the UNLICNESE license) that implements multi-threaded
-matching with regex. The github page reports a 2x performance
-improvement over \texttt{grep -r} even in worst case scenarios with
-high match counts and one single large file. 
+\subsection{Type Checking:}
+Both Python and Java are Object-Oriented languages. However, their philosophy on typing is different.
 
-This project is active and well-maintained, and serves as a valuable
-starting point to use or modify given our company's needs. In this 
-aspect, Rust allows our team to work at both low and high levels
-of abstraction and is advantageous.
+Python is dynamically typed, which means type checking is done at runtime. In contrast, Java is statically typed, and type checking is performed at compile-time. Static typing can catch type-related errors earlier in the development cycle, but it can also be more verbose and rigid. Python's dynamic typing allows for more flexibility and rapid prototyping.
 
-Another advantage of rust is a more extensive standard library than
-C / C++. Fore example, Semaphores and atomic integers are 
-implemented by the Rust language, which is handy for writing 
-parallelized programs.
+Python's type checking is performed by saving a "type" field in the heap objects themselves.
+Additionally, Python uses "duck typing," where "type checking" is performed by seeing if the object has an implementation for a named method or field. 
 
-A tradeoff in Ease-of-Use is brought about by Rust's focus on 
-memory safety. Many features designed to catch bugs at compile
-time, such as handling memory ownership, transferring ownership
-between threads, and specifying lifetimes of references and structs
-all lead to possibly verbose syntax, especially if our development
-team is not familiar with Rust before. Rust's design philosophy
-heavily departs away from C/C++'s attitude where the developer
-ensures the program's behavior is well-defined and intended, and 
-focuses on the compiler enforcing a strict set of rules that ensure
-memory safety. 
+Additionally, Python supports multiple inheritance, which means that a class can inherit attributes and methods from multiple parent classes. In Java, we would need to resort to interfaces to approximate this effect.
 
-\section{Rust's Safety Features}
-For bugs related to concurrency (race conditions, deadlock), Rust 
-provides similar primitives to Java (like mutexes and Atomic integers).
+Another of Python's strengths is that not all objects need to conform entirely to the definitions of a class. At runtime, we can still add attributes and methods to a Python object, or modify its methods to do something else. This could be handy in creating server objects packaged in our own types, and later redefining what their behavior should be upon responding to client requests. In contrast, such fine-grained behavior is less straightforward to write and think about in Java; we can code several options of what the server should do, but not functionality that is generated on the fly.
 
-Thanks to the relatively simple nature of our utility (we don't write to
-files), race conditions should be relatively rare. Rust's buffered I/O
-will help maintain a queue of write requests (printing matching lines)
-and read requests (read further into file to search).
+\subsection{Memory Management:}
+Python and Java handle the stack similarly, with the small distinction in compilation, if Java determines an object is only used by the callee and provably doesn't "escape" to other parts of the program's execution, it will allocate the object on the stack instead of the heap for quick access.
 
-References and local variables created through \texttt{let} are immutable
-by default, which helps eliminate unwanted tampering. Most of our
-strings should be immutable since we are simply searching on them.
+However, CPython (the standard Python interpreter implementation) does not perform escape analysis as an optimization technique. Escape analysis is a compiler optimization that determines which objects can be allocated on the stack frame rather than the heap, based on their "escape" behavior (whether they escape the current scope or function).
+It's worth noting that if our team wants the feature, the code written on servers can use PyPy, a Just-In-Time compiler for Python, do employ escape analysis, so this lack of feature is not a deal breaker for Python.
 
-Pointer safety is easier to maintain, as Rust allows us to generate 
-immutable "slices" that accesses parts of a longer string to search on.
-This is achieved by the ownership and borrowing rules Rust enforces,
-which states that only one valid access point to the heap can exist at 
-each moment, and we can create either one mutable reference to this 
-access pointer or multiple immutable references.
+Both Python and Java uses Garbage Collection at runtime to cleanup unused objects. In an effort to simplify the mechanisms of the language, Python tracks the reference count: record of the number of references to that object that currently exist. When a reference goes out of scope, Python will go decrement the object's reference count. If it goes to zero, that object is deallocated, and all its member references go out of scope. This can potentially trigger a cascade of deallocation.
 
-Rust implements a null pointer via states similar to ml's 
-None and Some. These are handled by pattern matching, and throws
-an error when attempting to dereference None.
+Glued on to this reference-counting approach is a garbage collector. This garbage collector periodically scans for and breaks cycles of objects that are no longer reachable, allowing them to be reclaimed.
 
-The compiler will check if the string is modified such that a "slice"
-will access invalid memory and throws a compile error to warn us early,
-which helps avoid bugs about dangling pointers and double freeing.
+Java's Garbage Collector is more sophisticated and uses a Copying Collector. In this scheme, newly created objects are put into a "nursery" region in memory. Periodically, only objects that are still in use are copied into a new region, whereas the other objects are deallocated by abandoning the nursery. This leads to favorable cache contents and faster behavior, since we don't need to visit the objects that are deallocated.
 
-Rust also supports "unsafe" operations wrapped in specially 
-designated blocks or functions. This can be used to implement 
-C-like behavior should it prove to be necessary or desirable.
+\subsection{Concurrency:}
+Python has the Global Interpreter Lock (GIL), which prevents true parallelism within a single process. However, Python's asyncio library and other concurrency libraries like multiprocessing allow for concurrent execution by using a green thread approach:
+coroutines are created and setup, and although only one of them is executed by the event loop at a time, while one is waiting, other coroutines can run.
 
-\section{Rust's Performance and Reliability}
-Generally, Rust is a performant language. On most benchmarks, 
-it performs remarkably fast, although on occasion slightly 
-slower than C / C++. See references for these speed comparisons. 
+In comparison, Java has multithreading support and many synchronization primitives. Our herd servers' tasks will mainly be sending updates to other herd servers and querying other parts of our application (like asking Google Places in our demo). Since most of our application should be wait-time bound instead of CPU-bound, the event-loop approach should be quite nice. 
 
-Rust checks types statically and manages unused storage by 
-inserting \texttt{drop()} calls, which are similar to \texttt{free()} calls 
-into the program whenever the region of memory's owner variable 
-(think pointer) goes  out of scope. It does not collect garbage 
-at runtime. Therefore, it is more performant than other 
-languages that need to check for garbage collection at runtime.
+\section{Ease of Use:}
+asyncio provides a high-level and user-friendly API for writing concurrent code. The async/await syntax makes asynchronous code look and feel similar to synchronous code, reducing the cognitive overhead associated with callback-based approaches. This can make asyncio easier to use and maintain compared to other concurrency models.
 
-Because memory is freed according formalized rules that 
-the compiler adopts, the program behaves reliably. We know 
-when a region of memory becomes not used. Expensive 
-operations like deep copying is performed via explicit calls
-to \texttt{clone()}, which informs the programmer that
-something special is taking place.
+Adding new servers to the model is quite easy as well. The only thing needing update is the adjacency lists in existing servers, and given our system, a central server could send updates to the herd servers to announce the arrival of a new "friend." As written, the servers already get access to any incoming requests. They just need to recognize the new ports as from another herd server.
 
-For our application, file reading is likely to be a major bottleneck for
-latency. We will want to read in log files from the system, and break
-them down into multiple blocks to hand off to each thread for searching
-on. Therefore we want to read in large blocks of data at a time (unless
-the file is small). We are looking at using BufReader for buffered reads.
+\section{Performance:}
+asyncio is designed for high-performance I/O-bound applications. By using an event loop and cooperative multitasking, it can handle a large number of concurrent connections with relatively low overhead. However, for CPU-bound tasks, Python's GIL can limit performance, and other concurrency models like multiprocessing might be more appropriate.
 
-[USER]:s on the Rust Forum achieved around ~400MiB / second with their
-machines. Rate on our machines will depend on hardware architecture
-and storage solutions. Using Rust is a good choice for performance here,
-but not by much compared to other languages.
+\section{Comparison to a Java Approach:}
+In Java, we could set up a main thread to manage a thread pool. Upon receiving a client request, the main thread can assign a vacant thread to handle the client request, update the hash table, and talk to friends. This would work pretty well, but if we set up locks on the hash table (or parts of the hash table) then the multithreaded application becomes wait-time bound again, offering no performance gains over the asyncio approach. 
 
-Thread creation in rust is relatively lightweight, as calling 
-\texttt{std::thread::spawn}  just creates a system native thread. 
-This achieves similar performance to C / C++, and results in much more
-performant applications than languages like Java or Python.
-This also gives us the opportunity to spawn multiple threads to
-analyze the same line if the line is very long.
+Java also has asynchronous and event-driven libraries, but Python's async-await syntax is very easy to write and comprehend. \texttt{open-connection()} and \texttt{start-server()} offer solutions to socket-IO in one line, for example. 
 
-\section{Generality and Flexibility of Rust Programs}
+One advantage of Java and a multithreaded approach may become apparent if we scale up to our company's production servers. If there are large numbers of clients, we may need to remove old records from our hash tables or handle them with other data structures that need periodic large-scale updates. In Java, we can use a dedicated thread to check and remove records in the hash table that are older than a specified time-stamp. This will be fast, whereas removing old entries in Python will block the usage of the hash table for a while, leading to infrequent spikes in response time.
 
-Rust allows the user to specify types like \texttt{f32, u64}, directly
-specifying the number of bits they take up on the architecture. This can be
-very nice when we attempt to deploy code on to different architectures.
+\section{Comparison to Node.js}
+Both asyncio and Node.js use an event loop to handle concurrent operations. However, Node.js is built on top of the V8 JavaScript engine and uses Google's libuv library for its event loop implementation, while asyncio is built into Python's standard library.
 
-Rust is a compiled language that supports many plaforms, similar to C
-and C++.
+Node.js traditionally used callback-based asynchronous programming, which can lead to callback hell and reduced code readability. Modern Node.js versions support async await syntax, similar to Python's asyncio, which can improve code clarity and maintainability.
 
-One can create modules and generate modular code in similar fashion
-to C / C++, making the addition of new functionality easier. Rust additionally
-supports some functional programming-inspired features like closures,
-i.e. storing unnamed functions in variables and passing them around; and
-pattern-matching flow control; in Rust spirit, a pattern-matching flow
-control block must account for all possible inputs.
+Node.js has a large and active ecosystem, with numerous third-party libraries and tools available. Python's asyncio is part of the standard library and has a growing community, but the Node.js ecosystem is generally more mature and extensive.
 
-Rust is a more flexible language than C / C++ in the sense that it allows our
-team to operate at different levels of abstraction and use a multitude of 
-programming paradigms. There is support for object-oriented programming
-and nicely wrapped classes prewritten in STL like BufReader and 
-Mutex, but we can also implement our own versions of these objects from 
-scratch if we choose to. For parallel computing, there are low and high levels
-of primitives as well, allowing our team to choose a specific strategy that
-targets our application. 
-%-------------------------------------------------------------------------------
+net.connect() and net.createServer() in Node.js are similar in functionality to asyncio.open-connection() and asyncio.start-server() in Python's asyncio library. They establish network connections and create servers for handling incoming connections, respectively.
 
-\section{Summary}
-In summary, Rust offers several advantages in our parallelization effort on
-the search utility. The language is more flexible and memory-safe than C / 
-C++, offering more complete solutions that come with the language. 
-Additionally, because of its static type checking and lightweight 
-mechanisms (at runtime) for reclaiming unused memory 
-(compiler code insertion) and creating threads (light overhead), it is
-on par in performance with C / C++ and significantly faster than 
-Python or Java.
+create-server() calls start-server(), which establishes a new socket and listens on it. create-connection() calls start-connection(), which connects to a (host, port) address and returns a socket object.
 
-On the other hand, Rust's unique focus on memory safety results in restrictive 
-syntaxes that, while helping teams catch bugs at compile time, nevertheless 
-creates cryptic code and has a steep learning curve. 
+It's worth noting that Node.js also provides higher-level frameworks and libraries for building network applications, such as Express.js for web servers and Socket.IO for real-time communication, which can simplify the process of creating servers and handling network connections.
 
-My recommendation is to adopt Rust. Compared with GNU grep, the multi-threaded
-approach will offer significant speedup on large files, and Rust has a robust 
-ecosystem that provides useful tools and libraries that will speed up our development.
-While there may be some transition overhead to using the language, its comprehensive
-compile-time check system will help our developers catch bugs.
+JavaScript's OO design uses a prototype-based approach, which is even more dynamic and loose than Python's.
 
+\section{New Features in asyncio}
+
+Since Python 3.9, a number of features in asyncio have been added or updated.
+The introduction of Barriers in 3.11 as a synchronization primitive could help us manage updates to the hash table. In 3.12, the performance of writing to sockets in asyncio has been significantly improved, and current-task has been implemented in C for speedup as well (see citation). So our servers can get by with older versions of Python, but the newer versions are nice to have.
+
+\section{Problems Encountered}
+
+Checking that the messages aren't sent around in indefinite cycles proved to be tricky. In the end, I had each server "sign" their work with their server name. When considering who to send the message to, the server will skip over any friends that already signed the incoming request.
+
+\section{Recommendation for Using Python}
+
+Based on the project requirements and the analysis of Python's features, asyncio's approach to concurrency, and the similarities and differences with Node.js, using Python with the asyncio library is a recommended choice for implementing the herd servers.
+
+Advantages of Using Python with asyncio:
+
+    - Simplified and readable asynchronous code with async/await syntax
+    - Efficient handling of I/O-bound tasks like network communication and hash table updates
+    - Task specific memory requirements (maintain one large hash table, connection objects that only have one reference) suitable for Python's memory management scheme.
+
+Disadvantages and Considerations:
+
+    - Dynamic typing can lead to runtime errors if not properly handled
+    - Potential memory management challenges large-scale,  memory-intensive applications
+
+While Python with asyncio offers significant advantages for this project, it is essential to consider performance requirements, scalability needs, and the development team's experience with the language and concurrency models. If true parallelism or deterministic memory management is a critical requirement, Java's thread-based concurrency model might be a better fit. However, for the given use case of implementing herd servers, Python with asyncio provides a compelling balance of ease of use, performance, and suitability for the task at hand.
 
 \section{Sources Cited}
-    Benchmarks Game, \href{https://benchmarksgame-team.pages.debian.net/benchmarksgame/box-plot-summary-charts.html}{The Computer Language 23.03 Benchmarks Game} (2023).
+
+    Python Documentation. \href{https://docs.python.org/3/whatsnew/3.11.html#asyncio}{What's New in Python 3.11} (2022).
     
-    Github, \href{https://github.com/BurntSushi/ripgrep}{ripgrep}. Accessed March 6 2024.
+    Node.js. \href{https://nodejs.org/dist/latest-v20.x/docs/api/}{Node.js v20.11.1 Documentation} (2024).
     
-    Programming Language and Compiler Benchmarks. \href{https://programming-language-benchmarks.vercel.app/problem/mandelbrot}{All mandelbrot problem benchmarks} (2024).
-    
-    The Rust Programming Language. \href{https://doc.rust-lang.org/book/}{The Rust Programming Language} (2024).
-    
-    The Rust Programming Language. \href{https://doc.rust-lang.org/stable/rustc/platform-support.html}{The Rustc Book} (2024).
-    
-    Nicholas Nethercote. \href{https://nnethercote.github.io/perf-book/io.html}{The Rust Performance Book} (2024).
-    
-    Rust Programming Language users Forum. \href{https://users.rust-lang.org/t/how-to-do-fast-file-io/8278/5}{How to do Fast File IO?} (2016).
+    Wikipedia. \href{en.wikipedia.org/wiki/ISO_6709}{ISO-6709} (2024).
     
     ChatGPT 3.5. \href{https://chat.openai.com}{ChatGPT} (2024).
 
-\section{Appendix: ChatGPT prompts}
-[USER]: 
-
-The programming language Rust has the following feature: dynamically allocated memory is automatically returned once the variable that owns it goes out of scope. How does rust achieve this? does the compiler insert code that frees memory, or does this get determined at runtime?
-
-[CHAT GPT]:
-
-Rust achieves automatic memory management through a mechanism called ownership and borrowing, combined with its ownership system and lifetime checks at compile-time. It does not rely on garbage collection or runtime checks to reclaim memory.
-
-When you create a variable in Rust, it becomes the owner of the memory it refers to. When that variable goes out of scope, Rust automatically calls a special function called drop on that variable. This drop function deallocates the memory associated with the variable. The key point here is that this deallocation happens at compile time and is determined by the ownership and borrowing rules enforced by the compiler.
-
-The ownership system in Rust ensures that each piece of memory has exactly one owner at any given time. When a variable is reassigned or goes out of scope, Rust automatically checks and enforces these ownership rules. If there are no more references to a particular piece of memory, Rust knows it's safe to deallocate that memory.
-
-So, in summary, Rust achieves automatic memory management through compile-time checks enforced by the ownership system, rather than relying on runtime mechanisms like garbage collection. This results in predictable memory usage and performance characteristics without the overhead of runtime checks.
-
-[USER]:
-
-so drop() is essentially inserted into the source code by the compiler?
-
-[CHAT GPT]:
-
-Yes, that's correct. The drop() function is not explicitly written by the programmer in Rust code. Instead, it is automatically generated by the compiler for types that implement the Drop trait. When a variable goes out of scope, the compiler inserts a call to the drop() function for that variable. This function is responsible for performing any necessary cleanup, such as deallocating memory or releasing other resources associated with the variable.
-
-The Drop trait allows customizing the behavior of the drop() function for user-defined types. By implementing this trait, a programmer can define specific actions that should be taken when an instance of their type is dropped, providing flexibility and control over resource management in Rust programs.
-
-[USER]:
-
-my cpu has multiple cores. Generally speaking, can each core access flash storage concurrently, or is there a limited number of channels for CPUs to talk to flash?
-
-[CHAT GPT]:
-
-Generally speaking, multiple cores in a CPU can access flash storage concurrently, but the concurrency might be limited by the underlying storage architecture and the specific flash storage device.
-
-Flash storage devices, such as SSDs (Solid State Drives), typically have multiple NAND flash memory chips that can be accessed in parallel. These chips are organized into blocks and pages, and the storage controller in the SSD manages access to these blocks and pages.
-
-While modern SSDs can handle concurrent access from multiple CPU cores, there are still limitations to consider:
-
-    Interface Bandwidth: The interface between the CPU and the flash storage device (e.g., SATA, PCIe) may have limited bandwidth, which could become a bottleneck if multiple cores are trying to access the storage simultaneously.
-
-    Controller Efficiency: The SSD's controller plays a crucial role in managing concurrent access from multiple cores. Some SSD controllers may be more efficient than others in handling concurrent access patterns, resulting in better performance.
-
-    I/O Queuing: SSDs often have internal queues to manage incoming I/O requests. These queues can help optimize performance by reordering and scheduling requests from multiple cores.
-
-    Parallelism within the Flash Device: Flash memory chips themselves can support internal parallelism, allowing multiple read or write operations to be executed concurrently within the chip.
-
-Overall, while multiple CPU cores can theoretically access flash storage concurrently, the actual level of concurrency and performance may vary depending on factors such as the SSD's architecture, interface bandwidth, controller efficiency, and the specific workload characteristics. Additionally, software optimizations, such as proper I/O scheduling and parallelism management, can further improve the efficiency of concurrent access to flash storage.
-
-[USER]:
-
-is thread creation lightweight in rust?
-
-[CHAT GPT]:
-
-Yes, thread creation is relatively lightweight in Rust compared to some other programming languages. Rust's standard library provides a std::thread::spawn function for creating new threads, and this function is designed to be efficient and lightweight.
-
-When you call std::thread::spawn, Rust's runtime system (backed by the operating system) creates a new native thread and associates it with a lightweight Rust thread object. This operation typically involves minimal overhead compared to creating threads in languages like Java or Python, which may incur more significant overhead due to the runtime environment or garbage collection mechanisms.
-
-Rust's lightweight threading model allows you to create and manage thousands of threads with minimal performance impact. However, it's essential to consider the potential overhead of context switching and synchronization when designing multithreaded applications. Rust provides synchronization primitives like Mutex, Arc, and Atomic types to facilitate safe concurrent access to shared data.
-
-Overall, while thread creation in Rust is lightweight, it's essential to use threading judiciously and consider factors such as scalability, synchronization overhead, and potential contention when designing concurrent applications.
-
-[USER]:
-
-are semaphores implemented in the C++ std?
-
-[CHAT GPT]:
-
-As of my last update in January 2022, the C++ standard library (C++ STL) does not include a native semaphore implementation. However, C++20 introduced the semaphore header, which provides standard facilities for semaphore-like synchronization primitives.
-
-These semaphore classes provide a modern and standardized way to perform synchronization in C++ programs. However, it's important to note that support for <semaphore> may vary across different compilers and library implementations, especially for older compiler versions. Additionally, as of my last update, not all compilers fully support the C++20 standard, so it's essential to check the compiler documentation for compatibility and feature availability.
-
-[USER]:
-
-what happens if the file my rust program is reading gets modified by some other process?
-
-[CHAT GPT]::
-
-
-If a file being read by a Rust program gets modified by another process while the Rust program is actively reading it, the behavior can vary depending on several factors:
-
-    Operating System Behavior: Different operating systems may handle file modifications differently. Some operating systems may allow a file to be read even if it's being modified concurrently, while others may prevent reading or provide inconsistent results.
-
-    Filesystem Behavior: The behavior can also depend on the filesystem used. Some filesystems support concurrent reads and writes to files, while others may have stricter consistency guarantees that prevent concurrent access.
-
-    Rust's File I/O APIs: Rust's file I/O APIs generally provide low-level access to files, and they rely on the underlying operating system for file management. If the operating system allows concurrent access to the file, the Rust program may continue reading from the file even if it's being modified concurrently.
-
-    Buffering and Caching: If the Rust program is using buffered or cached I/O, it's possible that the program may read stale or outdated data from the file's buffer or cache, especially if the file is being modified concurrently.
-
-In general, reading a file that is being modified concurrently by another process can lead to unpredictable behavior and potential data corruption or inconsistencies. To avoid such issues, it's recommended to use appropriate synchronization mechanisms (e.g., file locks or mutexes) to coordinate access to the file between different processes or threads.
+    Tall, Snarky Canadian. \href{https://snarky.ca/how-the-heck-does-async-await-work-in-python-3-5/}{How the heck does async/await work in Python 3.5?} (2016).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

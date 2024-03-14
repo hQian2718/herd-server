@@ -1,292 +1,38 @@
-2024-03-11 23:25:45,388 - Bailey - DEBUG - Server online.
-2024-03-11 23:25:47,329 - Bailey - INFO - Client established connection.
-2024-03-11 23:25:47,330 - Bailey - DEBUG - Received request
-2024-03-11 23:25:47,330 - Bailey - INFO - request is IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710224747.327276
-2024-03-11 23:25:47,330 - Bailey - INFO - Processing IAMAT
-2024-03-11 23:25:47,330 - Bailey - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710224747.327276
-2024-03-11 23:25:47,331 - Bailey - DEBUG - [34.06893, -118.445127]
-2024-03-11 23:25:47,332 - Bailey - DEBUG - Hash Table Updated.
-2024-03-11 23:25:47,332 - Bailey - DEBUG - Writing Response AT Bailey 0.005322933197021484 kiwi.cs.ucla.edu +34.068930-118.445127 1710224747.327276
-
-2024-03-11 23:25:47,332 - Bailey - DEBUG - Response sent
-2024-03-11 23:25:47,332 - Bailey - DEBUG - Writer closed here.
-2024-03-11 23:25:47,333 - Bailey - DEBUG - Begins notifying friends.
-2024-03-11 23:25:47,333 - Bailey - DEBUG - Server friend Bona doesn't know!
-2024-03-11 23:25:47,334 - Bailey - DEBUG - Server friend Campbell doesn't know!
-2024-03-11 23:25:47,334 - Bailey - DEBUG - All friends notified
-2024-03-11 23:52:42,222 - Bailey - DEBUG - Server online.
-2024-03-11 23:52:45,344 - Campbell - DEBUG - Server online.
-2024-03-11 23:52:46,595 - Bailey - INFO - Client established connection.
-2024-03-11 23:52:46,597 - Campbell - INFO - Client established connection.
-2024-03-11 23:53:53,110 - Bailey - INFO - Client established connection.
-2024-03-11 23:53:53,111 - Campbell - INFO - Client established connection.
-2024-03-11 23:53:59,636 - Bailey - DEBUG - Server online.
-2024-03-11 23:54:01,217 - Campbell - DEBUG - Server online.
-2024-03-11 23:54:03,621 - Bailey - INFO - Client established connection.
-2024-03-11 23:54:03,623 - Campbell - INFO - Client established connection.
-2024-03-11 23:54:41,363 - Campbell - DEBUG - Server online.
-2024-03-11 23:54:42,264 - Bailey - DEBUG - Server online.
-2024-03-11 23:54:43,582 - Bailey - INFO - Client established connection.
-2024-03-11 23:54:43,584 - Campbell - INFO - Client established connection.
-2024-03-11 23:54:49,524 - Bailey - DEBUG - Server online.
-2024-03-12 00:01:27,149 - Bailey - DEBUG - Server online.
-2024-03-12 00:01:30,209 - Campbell - DEBUG - Server online.
-2024-03-12 00:01:31,676 - Bailey - INFO - Client established connection.
-2024-03-12 00:01:31,676 - Bailey - INFO - Processing IAMAT
-2024-03-12 00:01:31,677 - Bailey - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710226891.674804
-2024-03-12 00:01:31,677 - Bailey - DEBUG - [34.06893, -118.445127]
-2024-03-12 00:01:31,678 - Bailey - DEBUG - Hash Table Updated.
-2024-03-12 00:01:31,678 - Bailey - DEBUG - Begins notifying friends.
-2024-03-12 00:01:31,679 - Bailey - DEBUG - Server friend Bona doesn't know!
-2024-03-12 00:01:31,679 - Bailey - DEBUG - Server friend Campbell doesn't know!
-2024-03-12 00:01:31,679 - Bailey - DEBUG - Friend online, sending update to Campbell
-2024-03-12 00:01:31,679 - Bailey - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710226891.674804 Bailey
-
-2024-03-12 00:01:31,680 - Bailey - DEBUG - Response sent
-2024-03-12 00:01:31,680 - Campbell - INFO - Client established connection.
-2024-03-12 00:01:31,680 - Bailey - DEBUG - Writer closed here.
-2024-03-12 00:01:31,680 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710226891.674804
-2024-03-12 00:01:31,680 - Bailey - DEBUG - All friends notified
-2024-03-12 00:01:31,680 - Campbell - DEBUG - [34.06893, -118.445127]
-2024-03-12 00:01:31,680 - Campbell - DEBUG - Begins notifying friends.
-2024-03-12 00:01:31,680 - Campbell - DEBUG - Server friend Bona doesn't know!
-2024-03-12 00:01:31,681 - Campbell - DEBUG - Server friend Jaquez doesn't know!
-2024-03-12 00:01:31,681 - Campbell - DEBUG - All friends notified
-2024-03-12 00:01:31,681 - Campbell - INFO - Client established connection.
-2024-03-12 00:01:31,681 - Campbell - INFO - Processsing WHATSAT
-2024-03-12 00:01:31,681 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
-2024-03-12 00:01:32,164 - Campbell - INFO - Google Places API returns 200
-2024-03-12 00:02:36,655 - Campbell - DEBUG - Server online.
-2024-03-12 00:02:37,902 - Bailey - DEBUG - Server online.
-2024-03-12 00:02:39,414 - Bailey - INFO - Client established connection.
-2024-03-12 00:02:39,414 - Bailey - INFO - Processing IAMAT
-2024-03-12 00:02:39,414 - Bailey - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710226959.412517
-2024-03-12 00:02:39,415 - Bailey - DEBUG - [34.06893, -118.445127]
-2024-03-12 00:02:39,416 - Bailey - DEBUG - Hash Table Updated.
-2024-03-12 00:02:39,416 - Bailey - DEBUG - Begins notifying friends.
-2024-03-12 00:02:39,416 - Bailey - DEBUG - Server friend Bona doesn't know!
-2024-03-12 00:02:39,417 - Bailey - DEBUG - Server friend Campbell doesn't know!
-2024-03-12 00:02:39,417 - Bailey - DEBUG - Friend online, sending update to Campbell
-2024-03-12 00:02:39,417 - Bailey - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710226959.412517 Bailey
-
-2024-03-12 00:02:39,417 - Bailey - DEBUG - Response sent
-2024-03-12 00:02:39,417 - Bailey - DEBUG - Writer closed here.
-2024-03-12 00:02:39,417 - Bailey - DEBUG - All friends notified
-2024-03-12 00:02:39,417 - Campbell - INFO - Client established connection.
-2024-03-12 00:02:39,417 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710226959.412517
-2024-03-12 00:02:39,418 - Campbell - DEBUG - [34.06893, -118.445127]
-2024-03-12 00:02:39,418 - Campbell - DEBUG - Begins notifying friends.
-2024-03-12 00:02:39,418 - Campbell - DEBUG - Server friend Bona doesn't know!
-2024-03-12 00:02:39,418 - Campbell - INFO - Client established connection.
-2024-03-12 00:02:39,419 - Campbell - DEBUG - Server friend Jaquez doesn't know!
-2024-03-12 00:02:39,419 - Campbell - DEBUG - All friends notified
-2024-03-12 00:02:39,419 - Campbell - INFO - Processsing WHATSAT
-2024-03-12 00:02:39,420 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
-2024-03-12 00:02:39,800 - Campbell - INFO - Google Places API returns 200
-2024-03-12 00:08:47,892 - Campbell - INFO - Client established connection.
-2024-03-12 00:08:47,894 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710227327.886015
-2024-03-12 00:08:47,895 - Campbell - DEBUG - [34.06893, -118.445127]
-2024-03-12 00:08:47,895 - Campbell - DEBUG - Begins notifying friends.
-2024-03-12 00:08:47,896 - Campbell - INFO - Client established connection.
-2024-03-12 00:08:47,897 - Campbell - INFO - Client established connection.
-2024-03-12 00:08:47,897 - Campbell - INFO - Processsing WHATSAT
-2024-03-12 00:08:47,899 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
-2024-03-12 00:08:47,901 - Campbell - DEBUG - Server friend Bona doesn't know!
-2024-03-12 00:08:47,901 - Campbell - DEBUG - Friend online, sending update to Bona
-2024-03-12 00:08:47,902 - Campbell - DEBUG - Server friend Jaquez doesn't know!
-2024-03-12 00:08:47,902 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710227327.886015 BaileyCampbell
-
-2024-03-12 00:08:47,902 - Campbell - DEBUG - Response sent
-2024-03-12 00:08:47,903 - Campbell - DEBUG - Writer closed here.
-2024-03-12 00:08:47,903 - Campbell - DEBUG - All friends notified
-2024-03-12 00:08:48,368 - Campbell - INFO - Google Places API returns 200
-2024-03-12 10:49:39,798 - Bona - DEBUG - Server online.
-2024-03-12 10:49:51,959 - Campbell - DEBUG - Server online.
-2024-03-12 10:50:22,729 - Bona - INFO - Client established connection.
-2024-03-12 10:50:22,729 - Bona - INFO - Processing IAMAT
-2024-03-12 10:50:22,729 - Bona - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265822.727384
-2024-03-12 10:50:22,730 - Bona - DEBUG - [34.06893, -118.445127]
-2024-03-12 10:50:22,730 - Bona - DEBUG - Hash Table Updated.
-2024-03-12 10:50:22,730 - Bona - DEBUG - Begins notifying friends.
-2024-03-12 10:50:22,730 - Bona - DEBUG - Server friend Clark doesn't know!
-2024-03-12 10:50:22,731 - Bona - DEBUG - Server friend Campbell doesn't know!
-2024-03-12 10:50:22,731 - Bona - DEBUG - Friend online, sending update to Campbell
-2024-03-12 10:50:22,731 - Bona - DEBUG - Server friend Bailey doesn't know!
-2024-03-12 10:50:22,731 - Bona - DEBUG - Friend online, sending update to Bailey
-2024-03-12 10:50:22,731 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265822.727384 Bona
-
-2024-03-12 10:50:22,731 - Bona - DEBUG - Response sent
-2024-03-12 10:50:22,731 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265822.727384 Bona
-
-2024-03-12 10:50:22,731 - Bona - DEBUG - Response sent
-2024-03-12 10:50:22,731 - Bona - DEBUG - Writer closed here.
-2024-03-12 10:50:22,731 - Campbell - INFO - Client established connection.
-2024-03-12 10:50:22,731 - Bona - DEBUG - Writer closed here.
-2024-03-12 10:50:22,731 - Bona - DEBUG - All friends notified
-2024-03-12 10:50:22,731 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265822.727384
-2024-03-12 10:50:22,732 - Campbell - DEBUG - [34.06893, -118.445127]
-2024-03-12 10:50:22,732 - Campbell - DEBUG - Begins notifying friends.
-2024-03-12 10:50:22,732 - Campbell - DEBUG - Server friend Bailey doesn't know!
-2024-03-12 10:50:22,732 - Campbell - DEBUG - Friend online, sending update to Bailey
-2024-03-12 10:50:22,733 - Campbell - INFO - Client established connection.
-2024-03-12 10:50:22,733 - Campbell - DEBUG - Server friend Jaquez doesn't know!
-2024-03-12 10:50:22,733 - Campbell - INFO - Processsing WHATSAT
-2024-03-12 10:50:22,733 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
-2024-03-12 10:50:22,743 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265822.727384 BonaCampbell
-
-2024-03-12 10:50:22,743 - Campbell - DEBUG - Response sent
-2024-03-12 10:50:22,743 - Campbell - DEBUG - Writer closed here.
-2024-03-12 10:50:22,744 - Campbell - INFO - Client established connection.
-2024-03-12 10:50:22,744 - Campbell - DEBUG - All friends notified
-2024-03-12 10:50:22,953 - Campbell - INFO - Google Places API returns 200
-2024-03-12 10:50:37,430 - Bona - INFO - Client established connection.
-2024-03-12 10:50:37,431 - Bona - INFO - Processing IAMAT
-2024-03-12 10:50:37,431 - Bona - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265837.429607
-2024-03-12 10:50:37,431 - Bona - DEBUG - [34.06893, -118.445127]
-2024-03-12 10:50:37,431 - Bona - DEBUG - Hash Table Updated.
-2024-03-12 10:50:37,431 - Bona - DEBUG - Begins notifying friends.
-2024-03-12 10:50:37,431 - Bona - DEBUG - Server friend Clark doesn't know!
-2024-03-12 10:50:37,431 - Bona - DEBUG - Server friend Campbell doesn't know!
-2024-03-12 10:50:37,431 - Bona - DEBUG - Friend online, sending update to Campbell
-2024-03-12 10:50:37,432 - Campbell - INFO - Client established connection.
-2024-03-12 10:50:37,432 - Bona - DEBUG - Server friend Bailey doesn't know!
-2024-03-12 10:50:37,432 - Bona - DEBUG - Friend online, sending update to Bailey
-2024-03-12 10:50:37,432 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265837.429607 Bona
-
-2024-03-12 10:50:37,432 - Bona - DEBUG - Response sent
-2024-03-12 10:50:37,432 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265837.429607 Bona
-
-2024-03-12 10:50:37,432 - Bona - DEBUG - Response sent
-2024-03-12 10:50:37,432 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265837.429607
-2024-03-12 10:50:37,432 - Campbell - DEBUG - [34.06893, -118.445127]
-2024-03-12 10:50:37,432 - Bona - DEBUG - Writer closed here.
-2024-03-12 10:50:37,432 - Campbell - DEBUG - Begins notifying friends.
-2024-03-12 10:50:37,432 - Bona - DEBUG - Writer closed here.
-2024-03-12 10:50:37,432 - Bona - DEBUG - All friends notified
-2024-03-12 10:50:37,432 - Campbell - DEBUG - Server friend Bailey doesn't know!
-2024-03-12 10:50:37,433 - Campbell - DEBUG - Friend online, sending update to Bailey
-2024-03-12 10:50:37,433 - Campbell - DEBUG - Server friend Jaquez doesn't know!
-2024-03-12 10:50:37,433 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265837.429607 BonaCampbell
-
-2024-03-12 10:50:37,433 - Campbell - DEBUG - Response sent
-2024-03-12 10:50:37,433 - Campbell - INFO - Client established connection.
-2024-03-12 10:50:37,433 - Campbell - DEBUG - Writer closed here.
-2024-03-12 10:50:37,433 - Campbell - INFO - Client established connection.
-2024-03-12 10:50:37,433 - Campbell - INFO - Processsing WHATSAT
-2024-03-12 10:50:37,433 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
-2024-03-12 10:50:37,434 - Campbell - DEBUG - All friends notified
-2024-03-12 10:50:37,576 - Campbell - INFO - Google Places API returns 200
-2024-03-12 10:50:50,570 - Bona - INFO - Client established connection.
-2024-03-12 10:50:50,570 - Bona - INFO - Processing IAMAT
-2024-03-12 10:50:50,570 - Bona - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265850.568304
-2024-03-12 10:50:50,570 - Bona - DEBUG - [34.06893, -118.445127]
-2024-03-12 10:50:50,570 - Bona - DEBUG - Hash Table Updated.
-2024-03-12 10:50:50,570 - Bona - DEBUG - Begins notifying friends.
-2024-03-12 10:50:50,570 - Bona - DEBUG - Server friend Clark doesn't know!
-2024-03-12 10:50:50,571 - Bona - DEBUG - Server friend Campbell doesn't know!
-2024-03-12 10:50:50,571 - Bona - DEBUG - Friend online, sending update to Campbell
-2024-03-12 10:50:50,571 - Campbell - INFO - Client established connection.
-2024-03-12 10:50:50,571 - Bona - DEBUG - Server friend Bailey doesn't know!
-2024-03-12 10:50:50,571 - Bona - DEBUG - Friend online, sending update to Bailey
-2024-03-12 10:50:50,571 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265850.568304 Bona
-
-2024-03-12 10:50:50,571 - Bona - DEBUG - Response sent
-2024-03-12 10:50:50,571 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265850.568304 Bona
-
-2024-03-12 10:50:50,572 - Bona - DEBUG - Response sent
-2024-03-12 10:50:50,572 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265850.568304
-2024-03-12 10:50:50,572 - Bona - DEBUG - Writer closed here.
-2024-03-12 10:50:50,572 - Campbell - DEBUG - [34.06893, -118.445127]
-2024-03-12 10:50:50,572 - Bona - DEBUG - Writer closed here.
-2024-03-12 10:50:50,572 - Campbell - DEBUG - Begins notifying friends.
-2024-03-12 10:50:50,572 - Bona - DEBUG - All friends notified
-2024-03-12 10:50:50,572 - Campbell - DEBUG - Server friend Bailey doesn't know!
-2024-03-12 10:50:50,572 - Campbell - DEBUG - Friend online, sending update to Bailey
-2024-03-12 10:50:50,572 - Campbell - DEBUG - Server friend Jaquez doesn't know!
-2024-03-12 10:50:50,573 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265850.568304 BonaCampbell
-
-2024-03-12 10:50:50,573 - Campbell - DEBUG - Response sent
-2024-03-12 10:50:50,573 - Campbell - INFO - Client established connection.
-2024-03-12 10:50:50,573 - Campbell - DEBUG - Writer closed here.
-2024-03-12 10:50:50,573 - Campbell - INFO - Processsing WHATSAT
-2024-03-12 10:50:50,573 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
-2024-03-12 10:50:50,573 - Campbell - DEBUG - All friends notified
-2024-03-12 10:50:50,573 - Campbell - INFO - Client established connection.
-2024-03-12 10:50:50,689 - Campbell - INFO - Google Places API returns 200
-2024-03-12 10:51:06,454 - Bona - INFO - Client established connection.
-2024-03-12 10:51:06,454 - Bona - INFO - Processing IAMAT
-2024-03-12 10:51:06,454 - Bona - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265866.45297
-2024-03-12 10:51:06,454 - Bona - DEBUG - [34.06893, -118.445127]
-2024-03-12 10:51:06,454 - Bona - DEBUG - Hash Table Updated.
-2024-03-12 10:51:06,454 - Bona - DEBUG - Begins notifying friends.
-2024-03-12 10:51:06,454 - Bona - DEBUG - Server friend Clark doesn't know!
-2024-03-12 10:51:06,455 - Bona - DEBUG - Server friend Campbell doesn't know!
-2024-03-12 10:51:06,455 - Bona - DEBUG - Friend online, sending update to Campbell
-2024-03-12 10:51:06,455 - Campbell - INFO - Client established connection.
-2024-03-12 10:51:06,455 - Bona - DEBUG - Server friend Bailey doesn't know!
-2024-03-12 10:51:06,455 - Bona - DEBUG - Friend online, sending update to Bailey
-2024-03-12 10:51:06,455 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265866.45297 Bona
-
-2024-03-12 10:51:06,455 - Bona - DEBUG - Response sent
-2024-03-12 10:51:06,455 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265866.45297 Bona
-
-2024-03-12 10:51:06,455 - Bona - DEBUG - Response sent
-2024-03-12 10:51:06,455 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710265866.45297
-2024-03-12 10:51:06,455 - Campbell - DEBUG - [34.06893, -118.445127]
-2024-03-12 10:51:06,455 - Bona - DEBUG - Writer closed here.
-2024-03-12 10:51:06,455 - Campbell - DEBUG - Begins notifying friends.
-2024-03-12 10:51:06,455 - Bona - DEBUG - Writer closed here.
-2024-03-12 10:51:06,456 - Bona - DEBUG - All friends notified
-2024-03-12 10:51:06,456 - Campbell - DEBUG - Server friend Bailey doesn't know!
-2024-03-12 10:51:06,456 - Campbell - DEBUG - Friend online, sending update to Bailey
-2024-03-12 10:51:06,456 - Campbell - DEBUG - Server friend Jaquez doesn't know!
-2024-03-12 10:51:06,456 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710265866.45297 BonaCampbell
-
-2024-03-12 10:51:06,456 - Campbell - DEBUG - Response sent
-2024-03-12 10:51:06,456 - Campbell - DEBUG - Writer closed here.
-2024-03-12 10:51:06,456 - Campbell - INFO - Client established connection.
-2024-03-12 10:51:06,457 - Campbell - INFO - Processsing WHATSAT
-2024-03-12 10:51:06,457 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
-2024-03-12 10:51:06,457 - Campbell - DEBUG - All friends notified
-2024-03-12 10:51:06,457 - Campbell - INFO - Client established connection.
-2024-03-12 10:51:06,653 - Campbell - INFO - Google Places API returns 200
-2024-03-12 10:55:40,514 - Bona - DEBUG - Server online.
-2024-03-12 11:08:46,200 - Bona - DEBUG - Server online.
-2024-03-12 11:08:47,325 - Campbell - DEBUG - Server online.
-2024-03-12 11:08:48,324 - Bona - INFO - Client established connection.
-2024-03-12 11:08:48,324 - Bona - INFO - Processing IAMAT
-2024-03-12 11:08:48,324 - Bona - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710266928.321745
-2024-03-12 11:08:48,324 - Bona - DEBUG - [34.06893, -118.445127]
-2024-03-12 11:08:48,324 - Bona - DEBUG - Hash Table Updated.
-2024-03-12 11:08:48,324 - Bona - DEBUG - Begins notifying friends.
-2024-03-12 11:08:48,325 - Bona - DEBUG - Server friend Clark doesn't know!
-2024-03-12 11:08:48,325 - Bona - DEBUG - Server friend Campbell doesn't know!
-2024-03-12 11:08:48,325 - Bona - DEBUG - Friend online, sending update to Campbell
-2024-03-12 11:08:48,325 - Bona - DEBUG - Server friend Bailey doesn't know!
-2024-03-12 11:08:48,325 - Bona - DEBUG - Friend online, sending update to Bailey
-2024-03-12 11:08:48,326 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710266928.321745 Bona
-
-2024-03-12 11:08:48,326 - Bona - DEBUG - Response sent
-2024-03-12 11:08:48,326 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710266928.321745 Bona
-
-2024-03-12 11:08:48,326 - Bona - DEBUG - Response sent
-2024-03-12 11:08:48,326 - Campbell - INFO - Client established connection.
-2024-03-12 11:08:48,326 - Bona - DEBUG - Writer closed here.
-2024-03-12 11:08:48,326 - Bona - DEBUG - Writer closed here.
-2024-03-12 11:08:48,326 - Bona - DEBUG - All friends notified
-2024-03-12 11:08:48,326 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710266928.321745
-2024-03-12 11:08:48,326 - Campbell - DEBUG - [34.06893, -118.445127]
-2024-03-12 11:08:48,326 - Campbell - DEBUG - Begins notifying friends.
-2024-03-12 11:08:48,327 - Campbell - DEBUG - Server friend Bailey doesn't know!
-2024-03-12 11:08:48,327 - Campbell - DEBUG - Friend online, sending update to Bailey
-2024-03-12 11:08:48,327 - Campbell - INFO - Client established connection.
-2024-03-12 11:08:48,327 - Campbell - DEBUG - Server friend Jaquez doesn't know!
-2024-03-12 11:08:48,327 - Campbell - INFO - Processsing WHATSAT
-2024-03-12 11:08:48,328 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyDUosP1G0nB-UDOsNnJ4Ety8KNz5q6TzDs
-2024-03-12 11:08:48,339 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710266928.321745 BonaCampbell
-
-2024-03-12 11:08:48,339 - Campbell - DEBUG - Response sent
-2024-03-12 11:08:48,340 - Campbell - DEBUG - Writer closed here.
-2024-03-12 11:08:48,340 - Campbell - INFO - Client established connection.
-2024-03-12 11:08:48,340 - Campbell - DEBUG - All friends notified
-2024-03-12 11:08:48,625 - Campbell - INFO - Google Places API returns 200
+2024-03-12 11:35:07,066 - Bona - INFO - Input: IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433
+2024-03-12 11:35:07,066 - Bona - INFO - Processing IAMAT
+2024-03-12 11:35:07,066 - Bona - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433
+2024-03-12 11:35:07,066 - Bona - DEBUG - [34.06893, -118.445127]
+2024-03-12 11:35:07,066 - Bona - DEBUG - Hash Table Updated.
+2024-03-12 11:35:07,066 - Bona - DEBUG - Begins notifying friends.
+2024-03-12 11:35:07,066 - Bona - DEBUG - Server friend Clark doesn't know!
+2024-03-12 11:35:07,066 - Bona - DEBUG - Friend online, sending update to Clark
+2024-03-12 11:35:07,067 - Bona - DEBUG - Server friend Campbell doesn't know!
+2024-03-12 11:35:07,067 - Bona - DEBUG - Friend online, sending update to Campbell
+2024-03-12 11:35:07,067 - Bona - DEBUG - Server friend Bailey doesn't know!
+2024-03-12 11:35:07,067 - Bona - DEBUG - Friend online, sending update to Bailey
+2024-03-12 11:35:07,067 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433 Bona
+2024-03-12 11:35:07,067 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433 Bona
+2024-03-12 11:35:07,068 - Bona - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433 Bona
+2024-03-12 11:35:07,068 - Clark - INFO - Input: UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433 Bona
+2024-03-12 11:35:07,068 - Campbell - INFO - Input: UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433 Bona
+2024-03-12 11:35:07,068 - Clark - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433
+2024-03-12 11:35:07,068 - Bona - DEBUG - All friends notified
+2024-03-12 11:35:07,068 - Campbell - DEBUG - Handling add_client kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433
+2024-03-12 11:35:07,068 - Clark - DEBUG - [34.06893, -118.445127]
+2024-03-12 11:35:07,068 - Campbell - DEBUG - [34.06893, -118.445127]
+2024-03-12 11:35:07,068 - Clark - DEBUG - Begins notifying friends.
+2024-03-12 11:35:07,068 - Campbell - DEBUG - Begins notifying friends.
+2024-03-12 11:35:07,068 - Clark - DEBUG - Server friend Jaquez doesn't know!
+2024-03-12 11:35:07,068 - Clark - DEBUG - Friend not online, skipping.
+2024-03-12 11:35:07,068 - Clark - DEBUG - All friends notified
+2024-03-12 11:35:07,069 - Campbell - DEBUG - Server friend Bailey doesn't know!
+2024-03-12 11:35:07,069 - Campbell - DEBUG - Friend online, sending update to Bailey
+2024-03-12 11:35:07,069 - Campbell - DEBUG - Server friend Jaquez doesn't know!
+2024-03-12 11:35:07,069 - Campbell - DEBUG - Friend not online, skipping.
+2024-03-12 11:35:07,069 - Campbell - INFO - Input: WHATSAT kiwi.cs.ucla.edu 10 2
+2024-03-12 11:35:07,069 - Campbell - INFO - Processsing WHATSAT
+2024-03-12 11:35:07,070 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyA83pvRMs3tb_6pz6xm9aoj7wTBFJ04oU0
+2024-03-12 11:35:07,080 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433 BonaCampbell
+2024-03-12 11:35:07,083 - Campbell - INFO - Input: UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433 BonaBailey
+2024-03-12 11:35:07,083 - Campbell - DEBUG - All friends notified
+2024-03-12 11:35:07,275 - Campbell - INFO - Google Places API returns 200
