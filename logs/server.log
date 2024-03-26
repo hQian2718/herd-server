@@ -31,7 +31,7 @@
 2024-03-12 11:35:07,069 - Campbell - DEBUG - Friend not online, skipping.
 2024-03-12 11:35:07,069 - Campbell - INFO - Input: WHATSAT kiwi.cs.ucla.edu 10 2
 2024-03-12 11:35:07,069 - Campbell - INFO - Processsing WHATSAT
-2024-03-12 11:35:07,070 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=AIzaSyA83pvRMs3tb_6pz6xm9aoj7wTBFJ04oU0
+2024-03-12 11:35:07,070 - Campbell - DEBUG - Google Places API call is https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=34.06893%2c-118.445127&radius=10000&key=
 2024-03-12 11:35:07,080 - Campbell - DEBUG - Writing Response UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433 BonaCampbell
 2024-03-12 11:35:07,083 - Campbell - INFO - Input: UPDATE kiwi.cs.ucla.edu +34.068930-118.445127 1710268507.06433 BonaBailey
 2024-03-12 11:35:07,083 - Campbell - DEBUG - All friends notified
