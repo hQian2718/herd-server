@@ -33,7 +33,7 @@ class HerdServer:
 
     async def create_server(self):
         self.server = await asyncio.start_server(
-            self.handel_request_clean, port=self.myport, family=socket.AF_INET
+            self.handel_request_clean, host="127.0.0.1", port=self.myport, family=socket.AF_INET
         )
         logging.debug("Server online.", extra=self.extra)
 
@@ -52,8 +52,7 @@ class HerdServer:
             # print(self.client_info)
             return True
         except ValueError:
-            return False
-        
+            return False  
     # send request to google places API.
     async def gplaces_request(self, client: str, n: int, r: int):
 
@@ -66,6 +65,7 @@ class HerdServer:
         async with aiohttp.ClientSession() as session:
             load_dotenv()
             key = os.getenv("GPLACE_KEY")
+            # key = "AIzaSyA83pvRMs3tb_6pz6xm9aoj7wTBFJ04oU0"
             request = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?"
             request += "location=" + str(self.client_info[client][0]) + "%2c"
             request += str(self.client_info[client][1])
@@ -87,13 +87,14 @@ class HerdServer:
                 return places + "\n\n"
 
     async def write_and_close(self, writer, response): 
+        response = response.rstrip('\n')
         logging.debug(f"Writing Response {response}")
         writer.write(response.encode())
         await writer.drain()
-        logging.debug(f"Response sent")
+        # logging.debug(f"Response sent")
         writer.close()
         await writer.wait_closed()
-        logging.debug("Writer closed here.")
+        # logging.debug("Writer closed here.")
     
     async def open_connection(self, name):
         try:
@@ -101,7 +102,7 @@ class HerdServer:
             return writer
         except Exception:
             return None
-
+    
     async def propagate_msg(self, req, signatures:str):
         logging.debug("Begins notifying friends.")
         writes = []
@@ -113,6 +114,8 @@ class HerdServer:
                     msg = f"UPDATE {req[1]} {req[2]} {req[3]} {signatures}{self.name}\n"
                     logging.debug("Friend online, sending update to " + server_mate)
                     writes.append(self.write_and_close(writer1, msg))
+                else:
+                    logging.debug("Friend not online, skipping.")
         
         await asyncio.gather(*writes)
         logging.debug("All friends notified")
@@ -135,20 +138,25 @@ class HerdServer:
             return response
 
     async def handle_query(self, request):
-        args = request.split()
+        _, name, r_km, n = request.split()
         logging.info("Processsing WHATSAT")
-        if(not args[1] in self.client_info):
+        if(not name in self.client_info):
             logging.debug("Client not found in hash table")
             return "? " + request + "\n"
         else:        
-            api_response = await self.gplaces_request(args[1], int(args[3]), int(args[2]))
+            api_response = await self.gplaces_request(name, int(n), int(r_km))
             # api_response = response
                 # api request function returns null: error encountered
             if not api_response:
                 logging.debug("API parameters contain error")
                 return "? " + request + "\n"
 
-            return api_response
+            coords = str(self.client_info[name][0]) + str(self.client_info[name][1])
+            if not coords.startswith("+") and not coords.startswith("-"):
+                coords = "+" + coords 
+            
+            header = f"AT {self.name} +1.00 {name} {coords} {self.client_info[name][2]}\n"
+            return header + api_response
     
     async def handle_flood(self, request):
         args = request.split()
@@ -159,10 +167,9 @@ class HerdServer:
         return request
     
     async def handel_request_clean(self, reader, writer):
-        logging.info("Client established connection.")
         request = await reader.read(1000)
         request = request.decode().strip()
-
+        logging.info(f"Input: {request}")
         response = "? " + request + "\n"
         if(request.startswith("IAMAT")):
             response = await self.handle_set(request)
@@ -189,12 +196,15 @@ async def main():
     parser.add_argument('server_name', type=str,
                         help='required server name input')
     args = parser.parse_args()
-    herd_member = await start_server(args.server_name)
-    async with herd_member.server:
-        await herd_member.server.serve_forever()
-        
-    logging.error("Server is shutting down.")
-    herd_member.server.close()
+    try:
+        herd_member = await start_server(args.server_name)
+        async with herd_member.server:
+            await herd_member.server.serve_forever()
+            
+        logging.info("Server is shutting down.")
+        herd_member.server.close()
+    except Exception as e:
+        logging.error("Exception encountered, shutting down." + e.__str__())
 
 if __name__ == "__main__":
     asyncio.run(main())
